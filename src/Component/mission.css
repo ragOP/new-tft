@@ -1,0 +1,69 @@
+.container-mission {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 93px;
+ background-color: #00081B;
+ width: 100%;
+ height: 408px;
+ font: 14px "Helvetica Neue LT W1G", Helvetica;
+  font-style: normal;
+  margin-top: -10px;
+}
+
+.content {
+ width: 28%;
+}
+.heading-text {
+ color: #00ffcc;
+ font-size: 18px;
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+.description {
+ color: #fff;
+ margin-top: 50px;
+ font-weight: 500;
+ line-height: 1.5;
+ font-size: 16px;
+}
+
+.description1 {
+ color: #fff;
+ margin-top: 30px;
+ font-weight: 500;
+ line-height: 1.5;
+ font-size: 14px;
+ opacity: 50%;
+}
+
+.button-mission {
+ display: flex;
+ align-items: center;
+ margin-top: 30px;
+}
+
+.button-mission:hover{
+ transform: translate(10px);
+}
+
+.button-text {
+ color: #666;
+ font-size: 16px;
+ margin-left: 10px;
+ text-transform: uppercase;
+}
+
+.button-text:hover{
+ color: #E71316;
+}
+
+.image-container {
+  height: 408px;
+}
+
+.image {
+ width: 100%;
+ height: 100%;
+}

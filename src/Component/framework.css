@@ -1,0 +1,54 @@
+.framework{
+ width: 100%;
+ height: 632px;
+ margin-top: 50px;
+ background-color: #F5F5F5;
+ padding-top: 50px;
+ padding-left: 100px;
+ padding-right: 100px;
+ margin-bottom: -100px;
+}
+.framework-title-main{
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 700;
+ line-height: 22px;
+ letter-spacing: 0.1em;
+ text-align: left;
+ color: #00677F;
+}
+.framework-main{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 20px;
+ gap: 40px;
+}
+.framework-single{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ width: 310px;
+height: 396px;
+padding: 32px 0px 32px 0px;
+}
+.framework-title{
+ font: 20px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 28px;
+ text-align: left !important;
+ margin-top: 30px;
+}
+.framework-description{
+ font: 14px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 24px;
+ text-align: left;
+ margin-top: 20px;
+}
+.framework-btn{
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ cursor: pointer;
+}

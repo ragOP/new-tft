@@ -1,0 +1,164 @@
+.brands{
+ height: 1548.5px;
+ font: 14px "Helvetica Neue LT W1G", Helvetica;
+ font-style: normal;
+ margin-top: 1200px;
+}
+.brand-banner{
+ display: flex;
+ align-items: center;
+ margin-top: 40px;
+}
+.brands-title {
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
+  line-height: 22px;
+  font-weight: 700;
+  color: #00677F;
+ padding: 0px 100px;
+}
+.banner-left {
+ position: relative;
+ z-index: 1;
+}
+.banner-left > img {
+ width: 100%;
+}
+.banner-right{
+ position: relative;
+ flex: 1;
+ margin-left: -70px;
+}
+.banner-right > img {
+ width: 100%;
+ height: 216px;
+}
+.banner-logos {
+ display: flex;
+ align-items: center;
+ width: 100%;
+ gap: 30px;
+ flex-wrap: wrap;
+ margin-top: 30px;
+ margin-bottom: 30px;
+ padding-left: 70px;
+}
+.banner-right-text{
+ position: absolute;
+ top: 0;
+ padding: 40px 80px;
+ font: 20px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 30px;
+ text-align: left;
+ color: #fff;
+}
+.banner-left-img{
+ position: absolute;
+ top: 0;
+ left: 0;
+ margin-top: 70px;
+ width: 188.52px;
+ height: 40.8px;
+}
+.logo-single {
+ width: 383.33px;
+ height: 363px;
+ background-color: #F5F5F5;
+ padding: 30px 50px; 
+ position: relative;
+ transition: all 0.3s ease;
+}
+
+.logo-single:hover{
+ color: #fff;
+ padding: 20px 40px; 
+}
+
+.logo-single > img {
+ transition: filter 0.3s ease, transform 0.3s ease;
+ width: 191px;
+ height: 75px;
+}
+
+.logo-single .brand-name {
+ transition: transform 0.3s ease;
+}
+
+.logo-single:hover img {
+ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(100deg);
+ margin-bottom: 10px;
+ transform: scale(0.6);
+ margin-left: -40px;
+}
+
+.logo-single:hover .brand-name {
+ transform: translateY(-10px);
+}
+.logo-single:hover[data-bgcolor="1"] {
+ background-color: #E71316;
+}
+
+.logo-single:hover[data-bgcolor="2"] {
+ background-color: #1C1C4C;
+}
+
+.logo-single:hover[data-bgcolor="3"] {
+ background-color: #E71316;
+}
+
+.logo-single:hover[data-bgcolor="4"] {
+ background-color: #005DAA;
+}
+
+.logo-single:hover[data-bgcolor="5"] {
+ background-color: #00677F;
+}
+.logo-single:hover[data-bgcolor="6"] {
+ background-color: #58595B;
+}
+.logo-single:hover[data-bgcolor="7"] {
+ background-color: #58595B;
+}
+.logo-single:hover[data-bgcolor="8"] {
+ background-color: #1F6997;
+}
+
+.logo-single::after {
+ content: '\2192';
+ position: absolute;
+ bottom: 10px;
+ right: 250px;
+ color: white;
+ font-size: 40px;
+ font-weight: 900;
+ opacity: 0;
+ transition: right 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-single:hover::after {
+ right: 20px;
+ opacity: 1;
+}
+
+.brand-description {
+ font: 16px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 24px;
+ text-align: left;
+ margin-top: 170px;
+}
+
+.logo-single:hover .brand-name p {
+ margin-top: 0;
+}
+
+.logo-single:hover .brand-name .custom-description::before {
+ content: attr(data-description);
+ display: block;
+ font-weight: bold;
+ font: 14px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 24px;
+ text-align: left;
+ margin-top: 10px;
+}

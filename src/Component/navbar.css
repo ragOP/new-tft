@@ -1,0 +1,75 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 14px "Helvetica Neue LT W1G", Helvetica;
+  font-style: normal;
+  background-color: #ffffff;
+  z-index: 1000;
+  height: 78px;
+}
+
+.navlogo > img {
+  height: 80px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu ul li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  left: -10px;
+  width: 95%;
+  height: 3px;
+  background-color: red;
+}
+
+.menu ul a {
+  margin-right: 30px;
+  cursor: pointer;
+  color: #222;
+  text-decoration: none;
+  font: 14px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.menulinks {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #ccc;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+}

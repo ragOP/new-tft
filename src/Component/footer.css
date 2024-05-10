@@ -1,0 +1,114 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4A4A4A;
+  width: 100%;
+  padding: 40px 50px;
+}
+
+.footer-column {
+  flex: 1;
+}
+.footer-first-top{
+  font: 18px "Helvetica Neue LT W1G", Helvetica;
+font-weight: 700;
+line-height: 24px;
+margin-bottom: 10px;
+color: #EBEBEC;
+
+
+}
+.footer-first-mid {
+  width: 695px;
+  font: 16px "Helvetica Neue LT W1G", Helvetica;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+color: #C9CACC;
+}
+
+.footer-first-bootom{
+  margin-top: 10px;
+  color: #C9CACC;
+
+}
+.footer-second{
+  font-family: 16px "Helvetica Neue LT W1G", Helvetica;
+font-weight: 700;
+line-height: 32px;
+text-align: left;
+color: #FFFFFF;
+
+}
+.footer-second-top{
+  color: #EBEBEC;
+}
+.footer-third{
+  font-family: 16px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.footer-third-top{
+  color: #EBEBEC;
+}
+.footer-fourth{
+  font-family: 16px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #FFFFFF;
+}
+.footer-fourth-top{
+  color: #EBEBEC;
+}
+.pre-footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #4A4A4A;
+  width: 100%;
+  padding: 40px 50px;
+margin-top: 1px;
+height: 96px;
+}
+.pre-footer-logo{
+  height: 32px !important;
+}
+.pre-footer-first{
+color:#EBEBEC ;
+font-family: 14px "Helvetica Neue LT W1G", Helvetica;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+}
+.pre-footer-second{
+  color:#EBEBEC ;
+  font-family: 14px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  }
+  .pre-footer-third{
+    color:#EBEBEC ;
+    font-family: 14px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    }
+    .footer-icons{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    .connect-top, .connect-bottom{
+      display: flex;
+      flex-direction: column;
+    }
+    .connect-top > img{
+      margin-bottom: 10px;
+    }
+    .connect-bottom > img{
+      margin-bottom: 10px;
+    }

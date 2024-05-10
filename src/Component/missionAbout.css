@@ -1,0 +1,62 @@
+.mission-about{
+ height: 558px;
+ font: 14px "Helvetica Neue LT W1G", Helvetica;
+ font-style: normal;
+ padding: 100px;
+}
+.mission-main-about{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 50px;
+}
+.mission-about-right{
+ width: 500px;
+ height: 490px;
+}
+.mission-about-left{
+ width: 450px;
+ height: 569px;
+}
+.mission-about-right > img{
+ width: 100%;
+ height: 100%;
+}
+.mission-about-titile{
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 700;
+ line-height: 22px;
+ letter-spacing: 0.1em;
+ text-align: left;
+ margin-top: 20px;
+ color: #00677F;
+}
+.mission-top{
+ font: 24px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 28px;
+ text-align: left;
+ color: #A6192E;
+}
+.mission-second{
+ font: 34px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 38px;
+ text-align: left;
+ color: #222222;
+ padding-top: 20px;
+}
+.mission-second > span {
+ font: 34px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 700;
+ line-height: 28px;
+ text-align: left;
+ color: #222222;
+ padding-top: 20px;
+}
+.mission-third, .mission-last{
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 24px;
+ text-align: left;
+ padding-top: 20px;
+}
