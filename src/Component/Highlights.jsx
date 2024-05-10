@@ -23,12 +23,10 @@ const Highlights = () => {
         <div className="single-highlight">
           <img src={four} alt="" />
           <div className="title-highlight">25% reduction</div>
-          <p className="desc-highlight">
-            in absolute scope 1 and 2 emissions since 2018
-          </p>
+          <p className="desc-highlight">in absolute scope 1 and 2</p>
         </div>
         <div className="single-highlight">
-          <img src={four} alt="" />
+          <img src={three} alt="" />
           <div className="title-highlight">89.5K students</div>
           <p className="desc-highlight">reached through STEM education</p>
         </div>

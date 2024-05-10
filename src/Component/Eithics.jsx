@@ -1,6 +1,7 @@
 import React from "react";
 import "./eithics.css";
 import one from "../Assets/Images/Rectangle 19948.png";
+import dot from "../Assets/Images/redsmall.svg";
 
 const Eithics = () => {
   return (
@@ -13,7 +14,7 @@ const Eithics = () => {
             <span> our code of business conduct and ethics</span>
           </div>
           <div className="eithics-mid">
-            <img src="" alt="" />
+            <img src={dot} alt="" />
             <p>
               All directors, officers and employees of the Company are
               responsible for reviewing this Code and certifying annually that
@@ -21,7 +22,7 @@ const Eithics = () => {
             </p>
           </div>
           <div className="eithics-mid">
-            <img src="" alt="" />
+            <img src={dot} alt="" />
             <p>
               All directors, officers and employees of the Company are
               responsible for reviewing this Code and certifying annually that
@@ -29,7 +30,7 @@ const Eithics = () => {
             </p>
           </div>
           <div className="eithics-btn">
-            <img src="" alt="" />
+            <img src={dot} alt="" />
             <p>Read more</p>
           </div>
         </div>

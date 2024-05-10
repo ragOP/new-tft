@@ -8,6 +8,7 @@ import Footer from "../Component/Footer";
 import CsrMain from "../Component/CsrMain";
 import CsrReport from "../Component/CsrReport";
 import Enviroment from "../Component/Enviroment";
+import Eithics from "../Component/Eithics";
 
 const Csr = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -96,6 +97,7 @@ const Csr = () => {
         sliderr={true}
         background="#fff"
       />
+      <Eithics />
       <Enviroment />
       <Footer />
     </>
