@@ -4,6 +4,7 @@ import one from "../Assets/Images/enviroment.png";
 import two from "../Assets/Images/Climate.png";
 import three from "../Assets/Images/Sustainability.png";
 import four from "../Assets/Images/Nature.png";
+import arrow from "../Assets/Images/Vector (1).png";
 
 const Enviroment = () => {
   return (
@@ -43,9 +44,47 @@ const Enviroment = () => {
           climate research.
         </div>
         <div className="enviroment-images">
-          <img src={two} alt="" />
-          <img src={three} alt="" />
-          <img src={four} alt="" />
+          <div className="single-enviroment-image">
+            <img src={two} alt="" />
+            <div className="overlay-enviroment">
+              <p className="overlay-enviroment-title">Climate</p>
+              <p className="overlay-enviroment-desc">
+                We at Thermo Fisher supports the urgent calls for action from
+                scientists around the world to address climate change.
+              </p>
+              <div className="overlay-arrow">
+                <img src={arrow} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="single-enviroment-image">
+            <img src={three} alt="" />
+            <div className="overlay-enviroment">
+              <p className="overlay-enviroment-title">Nature</p>
+              <p className="overlay-enviroment-desc">
+                Thermo Fisher is committed to protecting the world’s natural
+                resources by preserving fresh water resources and managing
+                waste.
+              </p>
+              <div className="overlay-arrow">
+                <img src={arrow} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="single-enviroment-image">
+            <img src={four} alt="" />
+            <div className="overlay-enviroment">
+              <p className="overlay-enviroment-title">Sustainability</p>
+              <p className="overlay-enviroment-desc">
+                We leverage the power of innovation to positively contribute to
+                a healthier world, which includes reducing the environmental
+                impact of our products and packaging from design to end of life.
+              </p>
+              <div className="overlay-arrow">
+                <img src={arrow} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

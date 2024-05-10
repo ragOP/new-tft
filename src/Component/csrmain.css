@@ -52,7 +52,6 @@
 .csr-commitment{
  height: 225px;
  background: #222222;
- margin-top: -15px;
  padding: 60px 100px;
 }
 .commit-one{
@@ -98,30 +97,4 @@
  text-align: left;
  left: 30px;
  color: #FFFFFF;
-}
-
-.csr-single {
- position: relative;
- transition: all 0.3s ease;
-}
-
-.csr-single:hover {
- background-color: red;
-}
-
-.csr-single:hover img {
- transform: translateY(-100%);
-}
-
-.csr-single:hover p {
- transform: translateY(-100%);
-}
-
-.csr-single:hover::after {
- content: '\2192';
- position: absolute;
- bottom: 15px;
- right: 15px;
- font-size: 40px;
- color: white;
 }
