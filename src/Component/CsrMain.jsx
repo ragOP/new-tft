@@ -5,6 +5,7 @@ import one from "../Assets/Images/Rectangle 19941.png";
 import two from "../Assets/Images/Rectangle 19941 (1).png";
 import three from "../Assets/Images/Rectangle 19941 (2).png";
 import four from "../Assets/Images/Rectangle 19941 (3).png";
+import arrow from "../Assets/Images/Vector (1).png";
 
 const CsrMain = () => {
   return (
@@ -34,19 +35,59 @@ const CsrMain = () => {
       <div className="csr-picture">
         <div className="csr-single">
           <img src={one} alt="" />
-          <p>Operations</p>
+          <p className="inside">Operations</p>
+          <div className="csr-single-overlay">
+            <p className="csr-overlay-title">Operations</p>
+            <p className="csr-overlay-desc">
+              Leveraging our capabilities to support our customers while
+              conducting our business and relationships with integrity
+            </p>
+            <div className="overlay-arrow">
+              <img src={arrow} alt="" />
+            </div>
+          </div>
         </div>
         <div className="csr-single">
           <img src={two} alt="" />
-          <p>Colleagues</p>
+          <p className="inside">Colleagues</p>
+          <div className="csr-single-overlay">
+            <p className="csr-overlay-title">Colleagues</p>
+            <p className="csr-overlay-desc">
+              Leveraging our capabilities to support our customers while
+              conducting our business and relationships with integrity
+            </p>
+            <div className="overlay-arrow">
+              <img src={arrow} alt="" />
+            </div>
+          </div>
         </div>
         <div className="csr-single">
           <img src={three} alt="" />
-          <p>Communities</p>
+          <p className="inside">Communities</p>
+          <div className="csr-single-overlay">
+            <p className="csr-overlay-title">Communities</p>
+            <p className="csr-overlay-desc">
+              Leveraging our capabilities to support our customers while
+              conducting our business and relationships with integrity
+            </p>
+            <div className="overlay-arrow">
+              <img src={arrow} alt="" />
+            </div>
+          </div>
         </div>
         <div className="csr-single">
           <img src={four} alt="" />
-          <p>Environment</p>
+          <p className="inside">Environment</p>
+          <div className="csr-single-overlay">
+            <p className="csr-overlay-title">Environment</p>
+            <p className="csr-overlay-desc">
+              Leveraging our capabilities to support our customers while
+              conducting our business and relationships with integrity
+            </p>
+            <div className="overlay-arrow">
+              <img src={arrow} alt="" />
+            </div>
+          </div>
         </div>
       </div>
       <div className="csr-commitment">

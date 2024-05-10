@@ -112,14 +112,14 @@
  color: #fff;
 }
 .single-enviroment-image:hover .overlay-enviroment .overlay-arrow {
- animation: slideLeftToRight 1s forwards;
+ animation: slideLeftToRight 0.5s forwards;
 }
 @keyframes slideLeftToRight {
  0% {
      transform: translateX(-300px);
  }
  100% {
-     transform: translateX(0);
+     transform: translateX(10px);
  }
 }
 
