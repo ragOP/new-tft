@@ -95,13 +95,7 @@ const Homepage = () => {
       <Revenue />
       <Newsroom />
       <Carrer />
-      <Diversity
-        title="DIVERSITY & INCLUSION"
-        heading="Our work is a"
-        hedingSpan="story of purpose"
-        desc="Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints."
-        sliderr={true}
-      />
+      <Diversity />
       <Media />
       <Footer />
     </>

@@ -21,6 +21,7 @@
   justify-content: space-between;
   width: 100%;
   gap: 60px;
+  position: relative;
 }
 .diversity-img{
   display: flex;
@@ -52,4 +53,22 @@
 .img-slider{
   margin-top: 80px;
   cursor: pointer;
+}
+.slider-range{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-top: 60px;
+}
+.slider-range > img {
+  width: 40px;
+  cursor: pointer;
+}
+.slider-range > p {
+  margin: 0px 20px;
+  color: rgb(160, 160, 160);
+}
+.slider-range > p > span {
+  color: #000;
 }

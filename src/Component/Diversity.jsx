@@ -1,35 +1,82 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./diversity.css";
 import main from "../Assets/Images/diversity.svg";
 import first from "../Assets/Images/Rectangle 19922.svg";
 import second from "../Assets/Images/Rectangle 19923.svg";
 import third from "../Assets/Images/Rectangle 19924.svg";
 import dot from "../Assets/Images/redsmall.svg";
-import slider from "../Assets/Images/Group 162.svg";
+import right from "../Assets/Images/Group 107.png";
+import left from "../Assets/Images/Group 1071.png";
 
-const Diversity = ({
-  title,
-  desc,
-  sliderr,
-  heading,
-  hedingSpan,
-  background,
-}) => {
+const Diversity = ({ background }) => {
+  const stories = [
+    {
+      title: "Our work is a ",
+      hedingSpan: "story of purpose",
+      description:
+        "Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints.",
+    },
+    {
+      title: "Our work is a ",
+      hedingSpan: "story of purpose",
+      description:
+        "Growing up premature sparked a passion for healthcare within me, driving me to seek ways to improve health outcomes using cutting-edge technologies.",
+    },
+    {
+      title: "Our work is a ",
+      hedingSpan: "story of purpose",
+      description:
+        "We want all colleagues to achieve their full potential and career aspirations. We are committed to the development of our diverse, global workforce, enhancing their skills.",
+    },
+    {
+      title: "Our work is a ",
+      hedingSpan: "story of purpose",
+      description:
+        "We want all colleagues to achieve their full potential and career aspirations. We are committed to the development of our diverse, global workforce, enhancing their skills.",
+    },
+  ];
+
+  const [images, setImages] = useState([main, first, second, third]);
+  const [key, setKey] = useState(0);
+  const [storyIndex, setStoryIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImages((prevImages) => {
+        const newImages = [...prevImages];
+        const lastImage = newImages.pop();
+        newImages.unshift(lastImage);
+        return newImages;
+      });
+      setKey((prevKey) => prevKey + 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const storyInterval = setInterval(() => {
+      setStoryIndex((prevIndex) => (prevIndex + 1) % stories.length);
+    }, 1000);
+
+    return () => clearInterval(storyInterval);
+  }, []);
+
   return (
     <div className="containermain" style={{ background: background }}>
-      <p className="title">{title}</p>
+      <p className="title">Diversity & inclusion</p>
       <div className="diversity-main">
         <div className="diversity-img">
-          <img src={main} alt="" />
-          <img src={first} alt="" />
-          <img src={second} alt="" />
-          <img src={third} alt="" />
+          {images.map((image, index) => (
+            <img key={key + index} src={image} alt="" />
+          ))}
         </div>
         <div className="diversity-text">
           <p className="diversity-title">
-            {heading} <span>{hedingSpan}</span>
+            {stories[storyIndex].title}{" "}
+            <span>{stories[storyIndex].hedingSpan}</span>
           </p>
-          <p className="diversity-desc">{desc}</p>
+          <p className="diversity-desc">{stories[storyIndex].description}</p>
           <div className="button-mission" style={{ width: "144px" }}>
             <img src={dot} alt="" />
             <p
@@ -39,7 +86,13 @@ const Diversity = ({
               Read Full Story
             </p>
           </div>
-          {sliderr && <img className="img-slider" src={slider} alt="" />}
+          <div className="slider-range">
+            <img src={left} alt="" />
+            <p>
+              <span>{storyIndex + 1} </span>of 4
+            </p>
+            <img src={right} alt="" />
+          </div>
         </div>
       </div>
     </div>

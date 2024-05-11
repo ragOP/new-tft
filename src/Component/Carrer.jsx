@@ -15,7 +15,10 @@ const Carrer = () => {
           </p>
           <div className="button-mission">
             <img src={dot} alt="" />
-            <p className="button-text" style={{ cursor: "pointer" }}>
+            <p
+              className="button-text"
+              style={{ cursor: "pointer", width: "242px" }}
+            >
               EXPLORE OPPORTUNITIES
             </p>
           </div>

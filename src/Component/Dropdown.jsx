@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./dropdown.css";
 import left from "../Assets/Images/ss.svg";
 import right from "../Assets/Images/Vector (4).svg";
