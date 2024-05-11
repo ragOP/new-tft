@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./dropdown.css";
 import left from "../Assets/Images/ss.svg";
 import right from "../Assets/Images/Vector (4).svg";
@@ -13,6 +13,18 @@ const Dropdown = ({ menus }) => {
 
   const toggleMenu = (menu) => {
     setActiveMenu(activeMenu === menu ? null : menu);
+  };
+
+  const location = useLocation();
+  const navigateTo = useNavigate();
+
+  const handleRedirect = (link) => {
+    const path = location.pathname;
+    if (path === link) {
+      window.location.reload();
+    } else {
+      navigateTo(link);
+    }
   };
 
   return (
@@ -49,9 +61,12 @@ const Dropdown = ({ menus }) => {
             </div>
             {activeMenu === menu.title && (
               <div className="submenu animated">
-                <Link to={menu.link}>
-                  <p>{menu.content}</p>
-                </Link>
+                <p
+                  style={{ cursor: "pointer" }}
+                  onClick={() => handleRedirect(menu.link)}
+                >
+                  {menu.content}
+                </p>
               </div>
             )}
           </div>
