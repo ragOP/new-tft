@@ -1,12 +1,12 @@
 .hero {
- position: relative;
+ position: absolute;
  width: 100%;
  height: 800px;
  background: #00081B;
- z-index: -2;
+ z-index: 1;
  font: 14px "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
-  margin-top: 78px;
+  top: 48px;
 }
 .video-container {
  position: relative;
@@ -40,7 +40,7 @@
 }
 .mission-main{
  position: absolute;
- bottom: 0;
+ bottom: -3px;
  left: 0;
  display: flex;
  align-items: center;
@@ -58,9 +58,11 @@
 }
 .desc{
  padding-top: 15px;
- font-size: 46px !important;
  color: #fff;
- font-weight: 100 !important;
+ font: 46px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 300 !important;
+ line-height: 55.2px;
+ text-align: left;
 }
 .desc > span {
  font-weight: 700;
@@ -69,6 +71,8 @@
  margin-top: 40px;
  color: #fff;
  cursor: pointer;
+ z-index: 1000;
+ position: relative;
 }
 .our-mission{
  margin-left: -93px;
@@ -84,7 +88,7 @@
 .hero-right{
  position: absolute;
  right: 0;
- bottom: 0;
+ bottom: -3px;
 }
 .hero-right > img{
  height: 117px;

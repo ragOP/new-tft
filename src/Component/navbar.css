@@ -13,8 +13,12 @@
   height: 78px;
 }
 
-.navlogo > img {
+.navlogo {
   height: 80px;
+}
+
+.navlogo > img {
+  height: 100%;
 }
 
 .menu {
