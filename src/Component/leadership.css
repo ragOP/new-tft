@@ -2,6 +2,7 @@
  width: 100%;
  height: 463px;
  margin-bottom: 100px;
+ margin-top: 50px;
 }
 .leadership-heading{
  color: var(--Accent-Teal, #00677f);
@@ -75,13 +76,13 @@
  width: 100%;
  flex-wrap: wrap;
  gap: 30px;
- margin-top: 40px;
+ margin-top: 10px;
  z-index: -10;
 }
 .single-image {
  width: 280px;
  height: 347px;
- margin-top: 80px;
+ margin-top: 40px;
  position: relative;
 }
 .single-desc {

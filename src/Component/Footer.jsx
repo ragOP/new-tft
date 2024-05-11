@@ -28,7 +28,10 @@ const Footer = () => {
             Fisher Scientific, Unity Lab Services, Patheon and PPD.
           </p>
           <p className="footer-first-bootom">
-            For more information, please visit www.thermofisher.com
+            For more information, please visit{" "}
+            <span style={{ textDecoration: "underline", color: "#FFFFFF" }}>
+              www.thermofisher.com
+            </span>
           </p>
         </div>
         <div className="footer-second">

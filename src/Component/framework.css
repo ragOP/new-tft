@@ -1,6 +1,6 @@
 .framework{
  width: 100%;
- height: 632px;
+ height: 562px;
  margin-top: 50px;
  background-color: #F5F5F5;
  padding-top: 50px;
@@ -26,11 +26,14 @@
 .framework-single{
  display: flex;
  align-items: center;
- justify-content: center;
+ /* justify-content: center; */
  flex-direction: column;
  width: 310px;
-height: 396px;
-padding: 32px 0px 32px 0px;
+ height: 396px;
+ padding: 32px 0px 32px 0px;
+}
+.framework-single > img {
+ width: 85px;
 }
 .framework-title{
  font: 20px "Helvetica Neue LT W1G", Helvetica;

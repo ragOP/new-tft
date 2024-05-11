@@ -65,9 +65,12 @@
 }
 .dropdown-header{
  display: flex;
- align-items: start;
+ align-items: center;
  gap: 10px;
  cursor: pointer;
+}
+.dropdown-header > img {
+  width: 15px;
 }
 .heder-drop{
  font: 20px "Helvetica Neue LT W1G", Helvetica;

@@ -21,10 +21,12 @@ const CsrMain = () => {
         <div className="csr-right">
           <p>
             As the world leader in serving science, we understand that we have a
-            unique opportunity and responsibility to use our position to make a
-            positive impact on society – not only by enabling our customers’
-            success, but also through our actions as a Company to make the world
-            a better place.
+            unique opportunity and responsibility to use our position{" "}
+            <span>
+              to make a positive impact on society – not only by enabling our
+              customers’ success, but also through our actions as a Company to
+              make the world a better place.
+            </span>
           </p>
           <div className="csr-btn">
             <img src={dot} alt="" />

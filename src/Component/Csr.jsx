@@ -4,6 +4,7 @@ import dot from "../Assets/Images/redsmall.svg";
 import left from "../Assets/Images/csr.png";
 import crsV from "../Assets/Images/csr1.svg";
 import crsH from "../Assets/Images/csr2.svg";
+import slider from "../Assets/Images/Group 27.png";
 
 const Csr = () => {
   return (
@@ -12,6 +13,9 @@ const Csr = () => {
       <div className="csr-main">
         <div className="csr-img">
           <img src={left} alt="" />
+          <div className="csr-silder">
+            <img src={slider} alt="" />
+          </div>
         </div>
         <div className="csr-text">
           <p className="csr-title">

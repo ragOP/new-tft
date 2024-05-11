@@ -2,6 +2,7 @@ import React from "react";
 import girl from "../Assets/Images/girl.svg";
 import "./mission.css";
 import dot from "../Assets/Images/redsmall.svg";
+import slider from "../Assets/Images/Group 29.png";
 
 export default function Mission({
   ourstories = "Mission Stories",
@@ -25,14 +26,15 @@ export default function Mission({
       <div className="content">
         <div className="heading">
           <h1 className="heading-text">{ourstories}</h1>
+          <img src={slider} alt="" />
         </div>
         <div className="description">{description}</div>
         <div className="description1">{description1}</div>
         <div className="button-mission">
           <img src={dot} alt="" />
-          <a href="/" className="button-text">
+          <p className="button-text" style={{ cursor: "pointer" }}>
             {readmore}
-          </a>
+          </p>
         </div>
       </div>
       <div className="image-container">
