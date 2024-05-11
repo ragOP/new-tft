@@ -44,6 +44,7 @@
  left: 0;
  display: flex;
  align-items: center;
+ z-index: 3;
 }
 .mission-text{
  position: absolute;
@@ -78,14 +79,14 @@
 .btn::after {
   content: '\2192';
   position: absolute;
-  top: 50%;
-  right: 5px;
   top: -15px;
+  right: 5px;
+  transform: translate(0, -50%);
   width: 0;
   height: 0;
-  transition: right 0.3s ease;
   opacity: 0;
   font-size: 30px;
+  transition: right 0.5s ease, opacity 0.5s ease;
 }
 
 .btn:hover::after {
@@ -102,10 +103,24 @@
   background-color: #00081B;
   width: 100%;
   height: 117px;
-  z-index: -1;
+  z-index: 1;
 }
-.right-main:hover{
-  color: green;
+.right::after {
+  content: '\2192';
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  transform: translate(0, -50%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  font-size: 30px;
+  transition: right 0.5s ease, opacity 0.5s ease;
+}
+
+.right:hover::after {
+  right: -10px; 
+  opacity: 1;
 }
 .hero-right{
  position: absolute;
