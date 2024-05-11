@@ -108,6 +108,7 @@ const Leadership = () => {
           marginLeft: "70px",
           marginTop: "50px",
           marginBottom: "50px",
+          width: "200px",
         }}
       >
         <img src={dot} alt="" />

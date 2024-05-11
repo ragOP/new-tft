@@ -2,14 +2,27 @@ import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../Assets/Images/logo.png";
 import search from "../Assets/Images/Search.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = ({ toggleDropdown }) => {
-  const [activeMenuItem, setActiveMenuItem] = useState(null);
-
+  const location = useLocation();
+  const path = location.pathname;
+  let usePath;
+  if (path === "/") {
+    usePath = null;
+  } else if (path === "/csr") {
+    usePath = "CSR";
+  } else if (path === "/about") {
+    usePath = "About";
+  } else if (path === "/investor") {
+    usePath = "Investor";
+  } else if (path === "/newsroom") {
+    usePath = "Newsroom";
+  }
+  const [activeMenuItem, setActiveMenuItem] = useState(usePath);
   const handleMenuItemClick = (menuItem) => {
     toggleDropdown(menuItem);
-    setActiveMenuItem(menuItem);
+    setActiveMenuItem(menuItem === activeMenuItem ? null : menuItem);
   };
 
   return (
@@ -23,25 +36,44 @@ const Navbar = ({ toggleDropdown }) => {
         <div className="menu">
           <ul>
             <li className={activeMenuItem === "About" ? "active" : ""}>
-              <Link onClick={() => handleMenuItemClick("About")}>ABOUT</Link>
+              <Link
+                className={activeMenuItem === "About" ? "active" : ""}
+                onClick={() => handleMenuItemClick("About")}
+              >
+                ABOUT
+              </Link>
             </li>
             <li className={activeMenuItem === "CSR" ? "active" : ""}>
-              <Link onClick={() => handleMenuItemClick("CSR")}>
+              <Link
+                className={activeMenuItem === "CSR" ? "active" : ""}
+                onClick={() => handleMenuItemClick("CSR")}
+              >
                 CORPORATE SOCIAL RESPONSIBILITY
               </Link>
             </li>
             <li className={activeMenuItem === "Investor" ? "active" : ""}>
-              <Link onClick={() => handleMenuItemClick("Investor")}>
+              <Link
+                className={activeMenuItem === "Investor" ? "active" : ""}
+                onClick={() => handleMenuItemClick("Investor")}
+              >
                 INVESTOR
               </Link>
             </li>
             <li className={activeMenuItem === "Newsroom" ? "active" : ""}>
-              <Link onClick={() => handleMenuItemClick("Newsroom")}>
+              <Link
+                className={activeMenuItem === "Newsroom" ? "active" : ""}
+                onClick={() => handleMenuItemClick("Newsroom")}
+              >
                 NEWSROOM
               </Link>
             </li>
             <li className={activeMenuItem === "Career" ? "active" : ""}>
-              <Link onClick={() => handleMenuItemClick("Career")}>CAREER</Link>
+              <Link
+                className={activeMenuItem === "Career" ? "active" : ""}
+                onClick={() => handleMenuItemClick("Career")}
+              >
+                CAREER
+              </Link>
             </li>
           </ul>
         </div>

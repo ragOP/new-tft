@@ -28,7 +28,7 @@ const CsrMain = () => {
               make the world a better place.
             </span>
           </p>
-          <div className="csr-btn">
+          <div className="csr-btn" style={{ width: "244px" }}>
             <img src={dot} alt="" />
             <p>Read more</p>
           </div>

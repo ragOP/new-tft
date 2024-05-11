@@ -47,6 +47,10 @@
   background-color: red;
 }
 
+.menu ul li a.active {
+  font-weight: bold;
+}
+
 .menu ul a {
   margin-right: 30px;
   cursor: pointer;

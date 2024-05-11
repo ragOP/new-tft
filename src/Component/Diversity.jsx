@@ -30,7 +30,7 @@ const Diversity = ({
             {heading} <span>{hedingSpan}</span>
           </p>
           <p className="diversity-desc">{desc}</p>
-          <div className="button-mission">
+          <div className="button-mission" style={{ width: "144px" }}>
             <img src={dot} alt="" />
             <p
               className="button-text"
