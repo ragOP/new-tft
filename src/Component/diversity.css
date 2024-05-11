@@ -72,3 +72,15 @@
 .slider-range > p > span {
   color: #000;
 }
+@keyframes slideRightToLeft {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.slide-right-to-left {
+  animation: slideRightToLeft 0.1s ease-in-out;
+}

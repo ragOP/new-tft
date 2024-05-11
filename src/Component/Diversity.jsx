@@ -7,6 +7,7 @@ import third from "../Assets/Images/Rectangle 19924.svg";
 import dot from "../Assets/Images/redsmall.svg";
 import right from "../Assets/Images/Group 107.png";
 import left from "../Assets/Images/Group 1071.png";
+import main1 from "../Assets/Images/Frame 395.png";
 
 const Diversity = ({ background }) => {
   const stories = [
@@ -36,7 +37,7 @@ const Diversity = ({ background }) => {
     },
   ];
 
-  const [images, setImages] = useState([main, first, second, third]);
+  const [images, setImages] = useState([]);
   const [key, setKey] = useState(0);
   const [storyIndex, setStoryIndex] = useState(0);
 
@@ -55,6 +56,11 @@ const Diversity = ({ background }) => {
   }, []);
 
   useEffect(() => {
+    const random = main1;
+    setImages([random, third, second, first]);
+  }, []);
+
+  useEffect(() => {
     const storyInterval = setInterval(() => {
       setStoryIndex((prevIndex) => (prevIndex + 1) % stories.length);
     }, 1000);
@@ -68,7 +74,12 @@ const Diversity = ({ background }) => {
       <div className="diversity-main">
         <div className="diversity-img">
           {images.map((image, index) => (
-            <img key={key + index} src={image} alt="" />
+            <img
+              className={index === 0 ? "slide-right-to-left" : ""}
+              key={key + index}
+              src={image}
+              alt=""
+            />
           ))}
         </div>
         <div className="diversity-text">
