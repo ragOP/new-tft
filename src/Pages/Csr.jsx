@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Component/Navbar";
 import Dropdown from "../Component/Dropdown";
 import Diversity from "../Component/Diversity";
@@ -70,6 +70,12 @@ const Csr = () => {
       link: "/newsroom",
     },
   ];
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Navbar toggleDropdown={toggleDropdown} />

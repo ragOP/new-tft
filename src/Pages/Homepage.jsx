@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../Component/Footer";
 import Media from "../Component/Media";
 import Diversity from "../Component/Diversity";
@@ -72,6 +72,12 @@ const Homepage = () => {
   ];
 
   const heroClass = dropdownVisible ? "blur" : "";
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <>

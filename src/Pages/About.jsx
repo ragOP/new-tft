@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../Component/Footer";
 import Navbar from "../Component/Navbar";
 import MissionAbout from "../Component/MissionAbout";
@@ -67,6 +67,13 @@ const About = () => {
       link: "/newsroom",
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
   return (
     <>
       <Navbar toggleDropdown={toggleDropdown} />
