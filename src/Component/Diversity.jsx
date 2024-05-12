@@ -30,16 +30,18 @@ const Diversity = ({ background }) => {
         "We want all colleagues to achieve their full potential and career aspirations. We are committed to the development of our diverse, global workforce, enhancing their skills.",
     },
     {
-      title: "Our work is a ",
-      hedingSpan: "story of purpose",
+      title: "My work is a story of ",
+      hedingSpan: "problem solving",
       description:
-        "We want all colleagues to achieve their full potential and career aspirations. We are committed to the development of our diverse, global workforce, enhancing their skills.",
+        "At Thermo Fisher, I lead a team that uses digital cloud computing to deliver tracking and bioinformatics systems to our customers, which enables us to offer high-value, end-to-end solutions.",
     },
   ];
 
   const [images, setImages] = useState([]);
   const [key, setKey] = useState(0);
   const [storyIndex, setStoryIndex] = useState(0);
+  const [mainImage, setMainImage] = useState([main, main1, left, right]);
+  const [randomIndex, setRandomIndex] = useState(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,9 +57,17 @@ const Diversity = ({ background }) => {
     return () => clearInterval(interval);
   }, []);
 
+  const randomImage = () => {
+    const initialRandomIndex = Math.floor(Math.random() * mainImage.length);
+    console.log(initialRandomIndex);
+  };
+
+  setTimeout(() => {
+    randomImage();
+  }, 10000);
+
   useEffect(() => {
-    const random = main1;
-    setImages([random, third, second, first]);
+    setImages([main, third, second, first]);
   }, []);
 
   useEffect(() => {
