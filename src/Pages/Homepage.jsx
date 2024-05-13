@@ -42,6 +42,7 @@ const Homepage = () => {
   const CsrMenuData = [
     {
       title: "Corporate Governance",
+      content: [{ name: "Corporate Page 1", link: "/csr" }],
     },
     {
       title: "Ethics & Compliance",
