@@ -12,7 +12,7 @@
   gap: 30px;
 }
 .leftdiv {
-  width: 392px;
+  width: 360px;
   height: 317px;
   flex-shrink: 0;
   border-radius: 2px;
@@ -21,7 +21,7 @@
   padding: 20px;
 }
 .leftdiv .p {
-  margin: -232px 25px 89px 24px;
+  margin: -232px 25px 89px 0px;
   position: relative;
   width: 382px;
   height: 257px;
@@ -36,7 +36,7 @@
 .logo {
   width: 40px;
   height: 40px;
-  margin: 24px 328px 253px 24px;
+  margin: 24px 328px 253px 0px;
 }
 .p > div {
   font-size: 14px;
@@ -44,4 +44,16 @@
   font-weight: 400;
   color: rgba(84, 88, 90, 1);
   padding-top: 30px !important;
+}
+@media only screen and (max-width: 1260px) {
+  .leftdiv {
+    width: 340px;
+  }
+  .logo{
+    margin: 24px 250px 253px 0px;
+  }
+  .leftdiv .p{
+    width: 340px;
+    padding-right: 40px;
+  }
 }

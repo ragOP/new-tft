@@ -34,7 +34,7 @@
 .diversity-title{
   font: 36px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
-  line-height: 56px;
+  line-height: 25px;
   text-align: left;
 }
 .diversity-title > span {
@@ -46,7 +46,7 @@
 .diversity-desc{
   font: 20px "Helvetica Neue LT W1G", Helvetica;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 25px;
   text-align: left;
   margin-top: 10px;
 }
@@ -58,8 +58,7 @@
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 0;
-  margin-top: 60px;
+  bottom:-45px;
 }
 .slider-range > img {
   width: 40px;
