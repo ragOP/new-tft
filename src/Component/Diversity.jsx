@@ -59,7 +59,7 @@ const Diversity = ({ background }) => {
 
   const randomImage = () => {
     const initialRandomIndex = Math.floor(Math.random() * mainImage.length);
-    console.log(initialRandomIndex);
+    // console.log(initialRandomIndex);
   };
 
   setTimeout(() => {
@@ -72,7 +72,7 @@ const Diversity = ({ background }) => {
       const dynamic = Math.random() < 0.5 ? main : main1;
       setImages([dynamic, third, second, first]);
     }, 2000);
-  
+
     return () => clearInterval(interval);
   }, []);
 

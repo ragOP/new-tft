@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../Assets/Images/logo.png";
+import logo1 from "../Assets/Images/logo1.png";
 import search from "../Assets/Images/Search.png";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar = ({ toggleDropdown }) => {
+const Navbar = ({ toggleDropdown, openDropDown }) => {
   const location = useLocation();
   const path = location.pathname;
   let usePath;
@@ -25,11 +26,13 @@ const Navbar = ({ toggleDropdown }) => {
     setActiveMenuItem(menuItem === activeMenuItem ? null : menuItem);
   };
 
+  console.log(openDropDown);
+
   return (
     <div className="navbar">
       <Link to="/">
         <div className="navlogo">
-          <img src={logo} alt="" />
+          <img src={openDropDown ? logo1 : logo} alt="" />
         </div>
       </Link>
       <div className="menulinks">

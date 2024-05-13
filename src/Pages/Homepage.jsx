@@ -52,7 +52,7 @@ const Homepage = () => {
     {
       title:
         "Operations" +
-        "\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020",
+        "\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020",
     },
     {
       title:
@@ -107,7 +107,7 @@ const Homepage = () => {
 
   return (
     <>
-      <Navbar toggleDropdown={toggleDropdown} />
+      <Navbar openDropDown={dropdownVisible} toggleDropdown={toggleDropdown} />
       {dropdownVisible && (
         <Dropdown
           menus={
