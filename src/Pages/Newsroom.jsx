@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Component/Navbar";
 import Dropdown from "../Component/Dropdown";
 
@@ -17,50 +17,82 @@ const Newsroom = () => {
   };
 
   const MenuData = [
-    { title: "Our Company", content: "Content 1", link: "/about" },
-    { title: "Our Stories", content: "Content 2", link: "/about" },
-    { title: "Information Security", content: "Content 3", link: "/about" },
-    { title: "Supplier Resources", content: "Content 4", link: "/about" },
+    {
+      title: "Our Company",
+      content: [
+        { name: "Our Mission", link: "/about" },
+        { name: "Our Values", link: "/about" },
+        { name: "innovation", link: "/about" },
+      ],
+    },
+    { title: "Our Stories" },
+    { title: "Information Security" },
+    { title: "Supplier Resources" },
   ];
 
   const CsrMenuData = [
     {
       title: "Corporate Governance",
-      content: "CSR Content 1",
-      link: "/csr",
     },
     {
       title: "Ethics & Compliance",
-      content: "CSR Content 2",
-      link: "/csr",
+    },
+    {
+      title: "Reporting",
+    },
+    {
+      title:
+        "Operations" +
+        "\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020",
+    },
+    {
+      title:
+        "Colleagues" +
+        "\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020",
+    },
+    {
+      title: "Communities",
+    },
+    {
+      title: "Enviroment",
     },
   ];
 
   const InvestorMenuData = [
     {
-      title: "Investor Menu 1",
-      content: "Investor Content 1",
-      link: "/investor",
+      title: "Financials",
     },
     {
-      title: "Investor Menu 2",
-      content: "Investor Content 2",
-      link: "/investor",
+      title: "Stock Information",
+    },
+    {
+      title: "Governance",
+    },
+    {
+      title: "Resources",
+    },
+    {
+      title: "Events & Presentations",
     },
   ];
 
   const NewsroomMenuData = [
     {
-      title: "Newsroom Menu 1",
-      content: "Newsroom Content 1",
-      link: "/newsroom",
+      title: "Press Releases",
     },
     {
-      title: "Newsroom Menu 2",
-      content: "Newsroom Content 2",
-      link: "/newsroom",
+      title: "In the News",
+    },
+    {
+      title: "Podcast : Science with a twist",
     },
   ];
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <Navbar toggleDropdown={toggleDropdown} />

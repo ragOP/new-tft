@@ -5,9 +5,9 @@ import left from "../Assets/Images/main-overlay.svg";
 import right from "../Assets/Images/mainn-overlay.svg";
 import play from "../Assets/Images/play.svg";
 
-const MainAbout = () => {
+const MainAbout = ({ className }) => {
   return (
-    <div className="main-about">
+    <div className={`main-about ${className}`}>
       <div className="decription">ABOUT</div>
       <div className="main-about-img">
         <img src={main} alt="" />
