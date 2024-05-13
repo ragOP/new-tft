@@ -2,7 +2,20 @@
   height: 458px;
   font: 14px "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
-  padding-top: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.main-media-title{
+  color: var(--Accent-Teal, #00677f);
+  font: 18px "Helvetica Neue LT W1G", Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 50px;
+  margin-left: 110px;
 }
 .container {
   display: flex;

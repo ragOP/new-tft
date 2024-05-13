@@ -1,0 +1,66 @@
+.podcast{
+ width: 100%;
+ height: 289px;
+ padding: 100px 100px;
+}
+.podcast-title {
+ color: var(--Accent-Teal, #00677f);
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 22px;
+ letter-spacing: 1.8px;
+ text-transform: uppercase;
+ white-space: nowrap;
+ margin-bottom: 50px;
+}
+.main-podcast{
+ display: flex;
+ align-items: center;
+ width: 100%;
+ gap: 40px;
+}
+.podcast-left, .podcast-right{
+ width: 600px;
+ height: 140px;
+ background-color: rgba(245, 245, 245, 1);
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+.podcast-play{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ margin-top: 20px;
+}
+.podcast-top{
+ font: 16px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 24px;
+ margin-top: 20px;
+ text-align: left;
+}
+.play-text{
+ font: 14px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 22px;
+ text-align: left;
+ color: rgba(231, 19, 22, 1);
+}
+.podcast-btn{
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ margin-top: 40px;
+}
+.podcast-btn > p {
+ font: 16px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 500;
+ line-height: 19.2px;
+ letter-spacing: 0.04em;
+ text-align: left;
+}
+
+
+

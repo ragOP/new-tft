@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Component/Navbar";
+import Footer from "../Component/Footer";
 import Dropdown from "../Component/Dropdown";
 import NewsroomAbout from "../Component/NewsroomAbout";
+import Podcast from "../Component/Podcast";
+import Media from "../Component/Media";
+import Newsletter from "../Component/Newsletter";
+import Press from "../Component/Press";
 
 const Newsroom = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -112,6 +117,13 @@ const Newsroom = () => {
         />
       )}
       <NewsroomAbout />
+      <Podcast />
+      <Press />
+      <Media />
+      <div className="cnter">
+        <Newsletter />
+      </div>
+      <Footer />
     </>
   );
 };

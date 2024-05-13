@@ -6,6 +6,7 @@ import facebook from "../Assets/Images/facebook.svg";
 const Media = () => {
   return (
     <div className="main-media">
+      <div className="main-media-title">SOCIAL MEDIA</div>
       <div className="container">
         <div className="leftdiv">
           <img src={x} alt="a" className="logo" />
