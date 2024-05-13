@@ -54,19 +54,22 @@ const Dropdown = ({ menus }) => {
               className={`dropdown-header ${
                 activeMenu === menu.title ? "active" : ""
               }`}
-              onClick={() => toggleMenu(menu.title)}
+              onClick={menu.content ? () => toggleMenu(menu.title) : null}
             >
               <img src={activeMenu === menu.title ? activeIcon : icon} alt="" />
               <p className="heder-drop">{menu.title}</p>
             </div>
-            {activeMenu === menu.title && (
+            {activeMenu === menu.title && menu.content && (
               <div className="submenu animated">
-                <p
-                  style={{ cursor: "pointer" }}
-                  onClick={() => handleRedirect(menu.link)}
-                >
-                  {menu.content}
-                </p>
+                {menu.content.map((item, idx) => (
+                  <p
+                    key={idx}
+                    style={{ cursor: "pointer" }}
+                    onClick={() => handleRedirect(item.link)}
+                  >
+                    {item.name}
+                  </p>
+                ))}
               </div>
             )}
           </div>
