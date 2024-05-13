@@ -7,6 +7,7 @@ import Podcast from "../Component/Podcast";
 import Media from "../Component/Media";
 import Newsletter from "../Component/Newsletter";
 import Press from "../Component/Press";
+import LeadershipN from "../Component/LeadershipN";
 
 const Newsroom = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -119,6 +120,7 @@ const Newsroom = () => {
       <NewsroomAbout />
       <Podcast />
       <Press />
+      <LeadershipN />
       <Media />
       <div className="cnter">
         <Newsletter />
