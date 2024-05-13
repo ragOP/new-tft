@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Component/Navbar";
 import Dropdown from "../Component/Dropdown";
+import NewsroomAbout from "../Component/NewsroomAbout";
 
 const Newsroom = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -109,7 +110,7 @@ const Newsroom = () => {
           }
         />
       )}
-      <h1>Newsroom</h1>
+      <NewsroomAbout />
     </>
   );
 };

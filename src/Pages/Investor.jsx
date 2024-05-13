@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Component/Navbar";
 import Dropdown from "../Component/Dropdown";
-import NewsroomAbout from "../Component/NewsroomAbout";
 
 const Investor = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -110,7 +109,7 @@ const Investor = () => {
           }
         />
       )}
-      <NewsroomAbout />
+      <h1>Investor</h1>
     </>
   );
 };
