@@ -1,9 +1,8 @@
 .main-media{
-  height: 458px;
+  height: 500px;
   font: 14px "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
   margin-top: 100px;
-  margin-bottom: 100px;
 }
 .main-media-title{
   color: var(--Accent-Teal, #00677f);
@@ -69,4 +68,8 @@
     width: 340px;
     padding-right: 40px;
   }
+}
+.with-background{
+  background-color: #f5f5f5;
+  padding: 80px 0px;
 }

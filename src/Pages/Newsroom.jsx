@@ -125,7 +125,7 @@ const Newsroom = () => {
       <Press />
       <InNews />
       <LeadershipN />
-      <Media />
+      <Media background={true} />
       <div className="cnter">
         <Newsletter />
       </div>
