@@ -28,7 +28,7 @@
   height: 317px;
   flex-shrink: 0;
   border-radius: 2px;
-  background: var(--Nuetral-8, #ebebec);
+  background: rgba(244,244,245,255);
   margin-bottom: 10px;
   padding: 20px;
 }

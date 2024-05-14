@@ -7,9 +7,10 @@
 }
 .main-renvenue{
  display: flex;
- align-items: center;
+ align-items: start;
  justify-content: space-between;
  width: 100%;
+ gap: 20px;
 }
 .revenue-left{
  height: 528px;
@@ -18,20 +19,31 @@
  display: flex;
  width: 100%;
  flex-direction: column;
- padding-top: 60px;
 }
 .revenue-top1 > p{
- font-size: 35px !important;
  line-height: 40px;
- font-weight: 700;
+ font-weight: 900;
  margin-bottom: 20px;
+ margin-top: 20px;
+ font: 64px "Helvetica Neue LT W1G", Helvetica;
+line-height: 46px;
+text-align: left;
+
+}
+.revenue-top1 > p > span {
+  font: 30px "Helvetica Neue LT W1G", Helvetica;
+
 }
 .revenue-mid > p{
- font-size: 20px !important;
+ font-size: 19px !important;
  line-height: 30px;
  font-weight: 400;
  opacity: 60%;
  margin-bottom: 40px;
+ margin-top: 20px;
+ margin-right: 10px;
+ color: 
+ #222222;
 }
 .revenue-bottom > img {
  width: 747px;
@@ -55,7 +67,7 @@
  line-height: 28px;
  font-weight: 500;
  color: #9BD3DD;
- margin-right: 30px
+ margin-right: 15px
 }
 .left-second{
  background-color: #00677F;
@@ -93,7 +105,7 @@
 }
 .revenue-bottom{
  position: relative;
- bottom: 0;
+ bottom: -15px;
  z-index: -100;
 }
 .postion-renvenue{

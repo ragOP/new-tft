@@ -19,6 +19,7 @@
  font-size: 18px;
  font-weight: 700;
  text-transform: uppercase;
+ letter-spacing: 0.1em;
 }
 
 .description {
@@ -60,7 +61,6 @@
  color: #666;
  font-size: 16px;
  margin-left: 10px;
- text-transform: uppercase;
 }
 
 .button-text:hover{

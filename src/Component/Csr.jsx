@@ -34,7 +34,11 @@ const Csr = () => {
           </div>
           <div
             className="button-mission"
-            style={{ width: "192px", marginTop: "30px" }}
+            style={{
+              width: "192px",
+              marginTop: "30px",
+              textTransform: "uppercase",
+            }}
           >
             <img src={dot} alt="" />
             <p className="button-text" style={{ cursor: "pointer" }}>

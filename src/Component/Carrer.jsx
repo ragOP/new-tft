@@ -13,7 +13,7 @@ const Carrer = () => {
             <span>Work in an inclusive global environment</span> that values the
             power of diverse talent, background and experiences
           </p>
-          <div className="button-mission">
+          <div className="button-mission" style={{ width: "292px" }}>
             <img src={dot} alt="" />
             <p
               className="button-text"

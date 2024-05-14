@@ -13,7 +13,9 @@ const Revenue = () => {
         </div>
         <div className="revenue-right">
           <div className="revenue-top1">
-            <p>$ 44.915 billion</p>
+            <p>
+              $ 44.915 <span>billion</span>
+            </p>
           </div>
           <div className="revenue-mid">
             <p>

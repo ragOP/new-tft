@@ -22,11 +22,8 @@ const Newsroom = () => {
           </div>
           <div className="button-mission">
             <img src={dot} alt="" />
-            <p
-              className="button-text"
-              style={{ textTransform: "capitalize", cursor: "pointer" }}
-            >
-              Read More
+            <p className="button-text" style={{ cursor: "pointer" }}>
+              Read more
             </p>
           </div>
         </div>
@@ -42,11 +39,8 @@ const Newsroom = () => {
           </div>
           <div className="button-mission">
             <img src={dot} alt="" />
-            <p
-              className="button-text"
-              style={{ textTransform: "capitalize", cursor: "pointer" }}
-            >
-              Read More
+            <p className="button-text" style={{ cursor: "pointer" }}>
+              Read more
             </p>
           </div>
         </div>

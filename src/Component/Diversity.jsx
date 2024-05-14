@@ -70,26 +70,24 @@ const Diversity = ({ background }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-        let dynamic;
-        const randomNumber = Math.random();
+      let dynamic;
+      const randomNumber = Math.random();
 
-        if (randomNumber < 0.25) {
-            dynamic = main;
-        } else if (randomNumber < 0.5) {
-            dynamic = main1;
-        } else if (randomNumber < 0.75) {
-            dynamic = girl;
-        } else {
-            dynamic = pic;
-        }
+      if (randomNumber < 0.25) {
+        dynamic = main;
+      } else if (randomNumber < 0.5) {
+        dynamic = main1;
+      } else if (randomNumber < 0.75) {
+        dynamic = girl;
+      } else {
+        dynamic = pic;
+      }
 
-        setImages([dynamic, third, second, first]);
+      setImages([dynamic, third, second, first]);
     }, 2000);
 
     return () => clearInterval(interval);
-}, []);
-
-
+  }, []);
 
   useEffect(() => {
     const storyInterval = setInterval(() => {
@@ -119,13 +117,10 @@ const Diversity = ({ background }) => {
             <span>{stories[storyIndex].hedingSpan}</span>
           </p>
           <p className="diversity-desc">{stories[storyIndex].description}</p>
-          <div className="button-mission" style={{ width: "144px" }}>
+          <div className="button-mission" style={{ width: "294px" }}>
             <img src={dot} alt="" />
-            <p
-              className="button-text"
-              style={{ cursor: "pointer", textTransform: "capitalize" }}
-            >
-              Read Full Story
+            <p className="button-text" style={{ cursor: "pointer" }}>
+              Read full story
             </p>
           </div>
           <div className="slider-range">
