@@ -43,7 +43,7 @@ const Diversity = ({ background }) => {
   const [key, setKey] = useState(0);
   const [storyIndex, setStoryIndex] = useState(0);
   const [mainImage, setMainImage] = useState([main, main1, left, right]);
-  const [randomIndex, setRandomIndex] = useState(null);
+  const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,19 +54,10 @@ const Diversity = ({ background }) => {
         return newImages;
       });
       setKey((prevKey) => prevKey + 1);
-    }, 1000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [images]);
-
-  const randomImage = () => {
-    const initialRandomIndex = Math.floor(Math.random() * mainImage.length);
-    // console.log(initialRandomIndex);
-  };
-
-  setTimeout(() => {
-    randomImage();
-  }, 10000);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -87,12 +78,17 @@ const Diversity = ({ background }) => {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [refresh]);
+
+  const handleRefresh = () => {
+    setRefresh((prevRefresh) => !prevRefresh);
+    console.log(refresh);
+  };
 
   useEffect(() => {
     const storyInterval = setInterval(() => {
       setStoryIndex((prevIndex) => (prevIndex + 1) % stories.length);
-    }, 1000);
+    }, 2000);
 
     return () => clearInterval(storyInterval);
   }, []);
@@ -124,11 +120,11 @@ const Diversity = ({ background }) => {
             </p>
           </div>
           <div className="slider-range">
-            <img src={left} alt="" />
+            <img onClick={handleRefresh} src={left} alt="" />
             <p>
               <span>{storyIndex + 1} </span>of 4
             </p>
-            <img src={right} alt="" />
+            <img onClick={handleRefresh} src={right} alt="" />
           </div>
         </div>
       </div>
