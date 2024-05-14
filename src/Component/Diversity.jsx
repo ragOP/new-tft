@@ -54,7 +54,7 @@ const Diversity = ({ background }) => {
         return newImages;
       });
       setKey((prevKey) => prevKey + 1);
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [images]);
@@ -75,7 +75,7 @@ const Diversity = ({ background }) => {
       }
 
       setImages([dynamic, third, second, first]);
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [refresh]);
@@ -88,7 +88,7 @@ const Diversity = ({ background }) => {
   useEffect(() => {
     const storyInterval = setInterval(() => {
       setStoryIndex((prevIndex) => (prevIndex + 1) % stories.length);
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(storyInterval);
   }, []);
