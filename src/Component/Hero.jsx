@@ -28,8 +28,8 @@ const Hero = ({ className }) => {
           <div className="mission-text">
             <p className="mission-title">OUR MISSION</p>
             <p className="desc">
-              To enable our customers to make the world{" "}
-              <span>healthier, cleaner and safer</span>
+              To enable our customers <br />
+              to make the world <span>healthier, cleaner and safer</span>
             </p>
             <p className="btn">READ MORE</p>
           </div>

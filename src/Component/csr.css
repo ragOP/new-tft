@@ -4,23 +4,25 @@
  padding-left: 100px;
  font: 14px "Helvetica Neue LT W1G", Helvetica;
  font-style: normal;
- padding-top: 100px;
+ padding-top: 70px;
 }
 .csr-headding{
  font: 18px "Helvetica Neue LT W1G", Helvetica;
  line-height: 22px;
  font-weight: 700;
  color: #00677F;
+ letter-spacing: 0.1em;
+ text-align: left;
 }
 .csr-main{
  display: flex;
  align-items: center;
  justify-content: space-between;
- margin-top: 70px;
+ margin-top: 40px;
 }
 .csr-img, .csr-text{
- width: 694px;
- height: 396px;
+ width: 594px;
+height: 396px;
 }
 .csr-img > img{
  width: 100%;
@@ -37,7 +39,8 @@
 .csr-title {
  font: 38px "Helvetica Neue LT W1G", Helvetica;
  font-weight: 200;
- line-height: 46px;
+ line-height: 50px;
+ text-align: left;
 }
 .crs-mid{
  display: flex;
@@ -45,19 +48,21 @@
  justify-content: space-between;
  width: 100%;
  margin-top: 40px;
- margin-bottom: 30px;
+ margin-bottom: 45px;
 }
 .csr-mid-txt > span{
- font: 24px "Helvetica Neue LT W1G", Helvetica;
+ font: 32px "Helvetica Neue LT W1G", Helvetica;
  font-weight: 700;
  line-height: 36px;
+ color: #222222;
 }
 .csr-mid-txt {
  margin-left: 30px;
- font: 18px "Helvetica Neue LT W1G", Helvetica;
+ font: 22px "Helvetica Neue LT W1G", Helvetica;
  font-weight: 400;
  line-height: 36px;
  text-align: left;
+ color: #222222;
 }
 .csr-silder{
  margin: 20px 0px;

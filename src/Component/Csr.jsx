@@ -20,7 +20,8 @@ const Csr = () => {
         <div className="csr-text">
           <p className="csr-title">
             <span>As a world leader in science,</span>
-            <br /> we have a great responsibility to serve the global community
+            <br /> we have a great responsibility <br />
+            to serve the global community
           </p>
           <div className="crs-mid">
             <img src={crsV} alt="" />
@@ -31,7 +32,10 @@ const Csr = () => {
             </p>
             <img src={crsH} alt="" />
           </div>
-          <div className="button-mission">
+          <div
+            className="button-mission"
+            style={{ width: "192px", marginTop: "30px" }}
+          >
             <img src={dot} alt="" />
             <p className="button-text" style={{ cursor: "pointer" }}>
               Read More
