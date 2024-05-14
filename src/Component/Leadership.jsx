@@ -105,10 +105,10 @@ const Leadership = () => {
       <div
         className="button-mission"
         style={{
-          marginLeft: "70px",
+          marginLeft: "100px",
           marginTop: "50px",
           marginBottom: "50px",
-          width: "200px",
+          width: "290px",
         }}
       >
         <img src={dot} alt="" />

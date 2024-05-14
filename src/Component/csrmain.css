@@ -44,9 +44,11 @@
     line-height: 30px;
     text-align: left;
     padding-right: 40px;
+
+    color: #222222;
    }
    .csr-right > p > span {
-    font-weight: 700;
+    font-weight: 600 !important;
    }
    .csr-btn {
     display: flex;
@@ -54,6 +56,14 @@
     cursor: pointer;
     margin-top: 15px;
     gap: 5px;
+    font: 16px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: 0.04em;
+    text-align: left;
+   }
+   .csr-btn:hover {
+    color: #E71316;
    }
    .csr-commitment{
     height: 225px;

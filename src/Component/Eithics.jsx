@@ -29,7 +29,7 @@ const Eithics = () => {
               they have reviewed and are in compliance with it
             </p>
           </div>
-          <div className="eithics-btn">
+          <div className="csr-btn" style={{ width: "123px" }}>
             <img src={dot} alt="" />
             <p>Read more</p>
           </div>

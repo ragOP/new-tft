@@ -14,7 +14,7 @@
  height: 490px;
 }
 .mission-about-left{
- width: 450px;
+ width: 500px;
  height: 569px;
 }
 .mission-about-right > img{
@@ -53,10 +53,17 @@
  color: #222222;
  padding-top: 20px;
 }
-.mission-third, .mission-last{
+.mission-third{
  font: 18px "Helvetica Neue LT W1G", Helvetica;
- font-weight: 500;
- line-height: 24px;
+ font-weight: 600;
+ line-height: 28px;
+ text-align: left;
+ padding-top: 20px;
+}
+.mission-last{
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 28px;
  text-align: left;
  padding-top: 20px;
 }

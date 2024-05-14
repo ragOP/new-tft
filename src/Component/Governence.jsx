@@ -18,8 +18,8 @@ const Governence = () => {
             <p className="governance-desc-main">
               For policies on our public policy engagement and political <br />
               participation, as well as ESG-related elements in executive <br />
-              compensation, please refer to our latest proxy statement on <br />{" "}
-              the
+              compensation, please refer to our latest{" "}
+              <a href="/">proxy statement </a>on <br /> the
               <a href="/">SEC filings website.</a>
             </p>
             <p className="governance-readme">READ MORE</p>

@@ -59,7 +59,7 @@
     line-height: 48px;
     text-align: left;
     color: #262262;
-    padding: 0 70px;
+    padding: 0 100px;
     margin-top: 40px;
    }
    .bottom-title > span {
@@ -91,7 +91,7 @@
     height: 115px;
     background-color: #00677F;
     position: absolute;
-    bottom: -30px;
+    bottom: -9px;
     padding: 15px 30px;
     color: #fff;
     transition: height 0.3s ease;
@@ -106,7 +106,7 @@
    .single-image::after {
     content: '\2192';
     position: absolute;
-    bottom: -15px;
+    bottom: -2px;
     right: 250px;
     color: white;
     font-size: 40px;

@@ -23,7 +23,7 @@ const Framework = () => {
           </div>
         </div>
         <div className="framework-single">
-          <img src={one} alt="" />
+          <img src={two} alt="" />
           <div className="main-frame-des">
             <p className="framework-title">Materiality Assessment</p>
             <p className="framework-description">
@@ -34,7 +34,7 @@ const Framework = () => {
           </div>
         </div>
         <div className="framework-single">
-          <img src={two} alt="" />
+          <img src={one} alt="" />
           <div className="main-frame-des">
             <p className="framework-title">Stakeholder Engagement</p>
             <p className="framework-description">
@@ -55,7 +55,7 @@ const Framework = () => {
           </div>
         </div>
       </div>
-      <div className="framework-btn">
+      <div className="csr-btn" style={{ width: "122px" }}>
         <img src={dot} alt="" />
         <p className="btn-framework">Read more</p>
       </div>

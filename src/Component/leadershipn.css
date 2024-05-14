@@ -133,5 +133,26 @@
  gap: 8px;
 }
 
+.leadership-bottom {
+ position: relative;
+ display: inline-block;
+}
+
+.leadership-bottom::after {
+ content: '\2192';
+ position: absolute;
+ top: 5px;
+ right: -35px;
+ transform: translateY(-50%);
+ opacity: 0;
+ font-size: 30px ;
+ transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+.leadership-bottom:hover::after {
+ opacity: 1;
+ left: calc(100% + 5px);
+}
+
 
 
