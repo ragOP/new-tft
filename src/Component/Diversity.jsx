@@ -42,7 +42,6 @@ const Diversity = ({ background }) => {
   const [images, setImages] = useState([]);
   const [key, setKey] = useState(0);
   const [storyIndex, setStoryIndex] = useState(0);
-  const [mainImage, setMainImage] = useState([main, main1, left, right]);
   const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
@@ -78,11 +77,11 @@ const Diversity = ({ background }) => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [refresh]);
+  }, []);
 
   const handleRefresh = () => {
     setRefresh((prevRefresh) => !prevRefresh);
-    console.log(refresh);
+    console.log("test");
   };
 
   useEffect(() => {
@@ -92,6 +91,8 @@ const Diversity = ({ background }) => {
 
     return () => clearInterval(storyInterval);
   }, []);
+
+  useEffect(() => {}, [refresh]);
 
   return (
     <div className="containermain" style={{ background: background }}>
