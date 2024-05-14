@@ -8,6 +8,8 @@ import dot from "../Assets/Images/redsmall.svg";
 import right from "../Assets/Images/Group 107.png";
 import left from "../Assets/Images/Group 1071.png";
 import main1 from "../Assets/Images/Frame 395.png";
+import girl from "../Assets/Images/girl.svg";
+import pic from "../Assets/Images/stock.png";
 
 const Diversity = ({ background }) => {
   const stories = [
@@ -68,13 +70,26 @@ const Diversity = ({ background }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Randomly choose between main and main1
-      const dynamic = Math.random() < 0.5 ? main : main1;
-      setImages([dynamic, third, second, first]);
+        let dynamic;
+        const randomNumber = Math.random();
+
+        if (randomNumber < 0.25) {
+            dynamic = main;
+        } else if (randomNumber < 0.5) {
+            dynamic = main1;
+        } else if (randomNumber < 0.75) {
+            dynamic = girl;
+        } else {
+            dynamic = pic;
+        }
+
+        setImages([dynamic, third, second, first]);
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+}, []);
+
+
 
   useEffect(() => {
     const storyInterval = setInterval(() => {
