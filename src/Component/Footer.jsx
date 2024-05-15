@@ -29,9 +29,12 @@ const Footer = () => {
           </p>
           <p className="footer-first-bootom">
             For more information, please visit{" "}
-            <span style={{ textDecoration: "underline", color: "#FFFFFF" }}>
-              www.thermofisher.com
-            </span>
+            <a href="https://www.thermofisher.com" target="_blank" rel="noopener noreferrer">
+  <span style={{ textDecoration: "underline", color: "#FFFFFF" }}>
+    www.thermofisher.com
+  </span>
+</a>
+
           </p>
         </div>
         <div className="footer-second">
