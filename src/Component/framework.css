@@ -36,8 +36,8 @@
  width: 85px;
 }
 .framework-title{
- font: 20px "Helvetica Neue LT W1G", Helvetica;
- font-weight: 500;
+    font: 600 20px "Helvetica Neue LT W1G", Helvetica;
+ /* font-weight: 500; */
  line-height: 28px;
  text-align: left !important;
  margin-top: 30px;

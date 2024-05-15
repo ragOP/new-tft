@@ -9,7 +9,7 @@ import "./framework.css";
 const Framework = () => {
   return (
     <div className="framework">
-      <div className="framework-title-main">Strategic Framework</div>
+      <div className="framework-title-main">STRATEGIC FRAMEWORK</div>
       <div className="framework-main">
         <div className="framework-single">
           <img src={four} alt="" />
@@ -23,7 +23,7 @@ const Framework = () => {
           </div>
         </div>
         <div className="framework-single">
-          <img src={two} alt="" />
+          <img src={two} alt="" style={{marginTop:'-5px'}}/>
           <div className="main-frame-des">
             <p className="framework-title">Materiality Assessment</p>
             <p className="framework-description">
