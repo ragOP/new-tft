@@ -22,12 +22,13 @@
 }
 .revenue-top1 > p{
  line-height: 40px;
- font-weight: 900;
+ /* font-weight: 900; */
  margin-bottom: 20px;
  margin-top: 20px;
- font: 64px "Helvetica Neue LT W1G", Helvetica;
+ font: 700 64px "Helvetica Neue LT W1G", Helvetica; 
 line-height: 46px;
 text-align: left;
+color: #222;
 
 }
 .revenue-top1 > p > span {

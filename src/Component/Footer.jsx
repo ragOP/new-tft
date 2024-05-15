@@ -57,14 +57,38 @@ const Footer = () => {
           <p className="footer-third-top">Connect</p>
           <div className="footer-icons">
             <div className="connect-top">
-              <img src={linkedin} alt="" />
-              <img src={youtube} alt="" />
-              <img src={insta} alt="" />
+              <a
+                href="https://www.linkedin.com/company/thermo-fisher-scientific/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={linkedin} alt="LinkedIn" />
+              </a>
+              <a
+                href="https://twitter.com/thermofisher"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={youtube} alt="YouTube" />
+              </a>
+              <a
+                href="https://www.instagram.com/thermofisherscientific/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={insta} alt="Instagram" />
+              </a>
             </div>
+
             <div className="connect-bottom">
-              <img src={twitter} alt="" />
-              <img src={facebook} alt="" />
-            </div>
+  <a href="https://twitter.com/thermofisher" target="_blank" rel="noopener noreferrer">
+    <img src={twitter} alt="Twitter" />
+  </a>
+  <a href="https://www.facebook.com/thermofisher/" target="_blank" rel="noopener noreferrer">
+    <img src={facebook} alt="Facebook" />
+  </a>
+</div>
+
           </div>
         </div>
       </div>
