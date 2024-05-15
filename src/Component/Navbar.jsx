@@ -3,6 +3,7 @@ import "./navbar.css";
 import logo from "../Assets/Images/logo.png";
 import logo1 from "../Assets/Images/logo1.png";
 import search from "../Assets/Images/Search.png";
+import externalLink from "../Assets/Images/external-link.png"
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -88,7 +89,10 @@ const Navbar = ({ toggleDropdown, openDropDown }) => {
         <div className="search-icon">
           <img src={search} alt="" />
         </div>
-        <button className="button">Thermofisher.com</button>
+        <button className="button">Thermofisher.com
+        <img className="link-img" src={externalLink} alt="" />
+        </button>
+        {/* <button className="button">Thermofisher.com</button> */}
       </div>
     </div>
   );

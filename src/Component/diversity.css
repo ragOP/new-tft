@@ -27,13 +27,15 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  width: 45%;
   height: 367px;
 }
 .diversity-img > img {
   height: 100%;
+  width: 100%;
 }
 .diversity-text{
-  width: 546px;
+  width: 45%;
 }
 .diversity-title{
   font: 36px "Helvetica Neue LT W1G", Helvetica;

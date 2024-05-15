@@ -1,148 +1,156 @@
 .hero {
- position: absolute;
- width: 100%;
- height: 800px;
- background: #00081B;
- z-index: 1;
- font: 14px "Helvetica Neue LT W1G", Helvetica;
-  font-style: normal;
-  top: 48px;
-}
-.video-container {
- position: relative;
- width: 100%;
- height: 100%;
- overflow: hidden;
-}
-.video-background {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- object-fit: cover;
- z-index: -1;
-}
-.video-overlay {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 85%;
- background: linear-gradient(to left, #E71316, #00677F);
-  mix-blend-mode: overlay;
- z-index: 0;
-}
-.top-trap{
- position: absolute;
- top: 0;
- right: 0;
-}
-.mission-main{
- position: absolute;
- bottom: -3px;
- left: 0;
- display: flex;
- align-items: center;
- z-index: 3;
-}
-.mission-text{
- position: absolute;
- top: 0;
- padding-top: 50px;
- margin-left: 150px;
-}
-.mission-title{
- font-size: 19px !important;
- color: #fff;
- font-weight: 700;
-}
-.desc{
- padding-top: 15px;
- color: #fff;
- font: 46px "Helvetica Neue LT W1G", Helvetica;
- font-weight: 300 !important;
- line-height: 55.2px;
- text-align: left;
-}
-.desc > span {
- font-weight: 700;
-}
-.btn {
-  margin-top: 40px;
-  color: #fff;
-  cursor: pointer;
-  z-index: 1000;
   position: absolute;
-}
-
-.btn::after {
-  content: '\2192';
-  position: absolute;
-  top: -15px;
-  right: 5px;
-  transform: translate(0, -50%);
-  width: 0;
-  height: 0;
-  opacity: 0;
-  font-size: 30px;
-  transition: right 0.5s ease, opacity 0.5s ease;
-}
-
-.btn:hover::after {
-  right: -10px;
-  opacity: 1;
-}
-
-.our-mission{
- margin-left: -93px;
-}
-.right-main{
-  position: absolute;
-  bottom: 0;
-  background-color: #00081B;
   width: 100%;
-  height: 117px;
+  height: 800px;
+  background: #00081B;
   z-index: 1;
-  font: 16px "Helvetica Neue LT W1G", Helvetica;
-  font-weight: 500;
-  line-height: 19.2px;
-  letter-spacing: 0.04em;
-  text-align: left;
-}
-.right::after {
-  content: '\2192';
+  font: 14px "Helvetica Neue LT W1G", Helvetica;
+   font-style: normal;
+   top: 48px;
+ }
+ .video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+ }
+ .video-background {
   position: absolute;
-  top: -10px;
-  right: 5px;
-  transform: translate(0, -50%);
-  width: 0;
-  height: 0;
-  opacity: 0;
-  font-size: 35px;
-  transition: right 0.5s ease, opacity 0.5s ease;
-}
-
-.right:hover::after {
-  right: -10px; 
-  opacity: 1;
-}
-.hero-right{
- position: absolute;
- right: 0;
- bottom: -3px;
-}
-.hero-right > img{
- height: 117px;
-}
-.right{
- position: absolute;
- top: 0;
- margin-top: 50px;
- text-align: center;
- font-size: 18px !important;
- color: #fff;
- font-weight: 500;
- margin-left: 160px;
- cursor: pointer;
-}
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+ }
+ .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background: linear-gradient(to left, #E71316, #00677F);
+   mix-blend-mode: overlay;
+  z-index: 0;
+ }
+ .top-trap{
+  position: absolute;
+  top: 0;
+  right: 0;
+ }
+ .mission-main{
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+ }
+ .our-mission-left{
+   margin-top: -119px;
+   margin-right: -20px;
+ }
+ .mission-text{
+  position: absolute;
+  top: 0;
+  padding-top: 50px;
+  margin-left: 150px;
+ }
+ .mission-title{
+  font-size: 19px !important;
+  color: #fff;
+  font-weight: 700;
+ }
+ .desc{
+  padding-top: 15px;
+  color: #fff;
+  font: 46px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 300 !important;
+  line-height: 55.2px;
+  text-align: left;
+ }
+ .desc > span {
+  font-weight: 700;
+ }
+ .btn {
+   margin-top: 40px;
+   color: #fff;
+   cursor: pointer;
+   z-index: 1000;
+   position: absolute;
+ }
+ 
+ .btn::after {
+   content: '\2192';
+   position: absolute;
+   top: -15px;
+   right: 5px;
+   transform: translate(0, -50%);
+   width: 0;
+   height: 0;
+   opacity: 0;
+   font-size: 30px;
+   transition: right 0.5s ease, opacity 0.5s ease;
+ }
+ 
+ .btn:hover::after {
+   right: -10px;
+   opacity: 1;
+ }
+ 
+ .our-mission{
+  margin-left: -93px;
+ }
+ .our-mission .btn::after {
+   top:-11px!important;
+ }
+ .right-main{
+   position: absolute;
+   bottom: 0;
+   background-color: #00081B;
+   width: 100%;
+   height: 117px;
+   z-index: 1;
+   font: 16px "Helvetica Neue LT W1G", Helvetica;
+   font-weight: 500;
+   line-height: 19.2px;
+   letter-spacing: 0.04em;
+   text-align: left;
+ }
+ .right::after {
+   content: '\2192';
+   position: absolute;
+   top: -4;
+   right: 5px;
+   transform: translate(0, -50%);
+   width: 0;
+   height: 0;
+   opacity: 0;
+   font-size: 35px;
+   transition: right 0.5s ease, opacity 0.5s ease;
+ }
+ 
+ .right:hover::after {
+   right: -10px; 
+   opacity: 1;
+ }
+ .hero-right{
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+ }
+ .hero-right > img{
+  height: 117px;
+ }
+ .right{
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px !important;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 160px;
+  cursor: pointer;
+ }
+ 

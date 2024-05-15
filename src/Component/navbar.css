@@ -46,7 +46,16 @@
   height: 3px;
   background-color: red;
 }
-
+.menu ul li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  left: -10px;
+  width: 95%;
+  height: 3px;
+  background-color: red;
+}
 .menu ul li a.active {
   font-weight: bold;
 }
@@ -65,9 +74,9 @@
 }
 
 
-.menu ul li a:hover{
+/* .menu ul li a:hover{
   font-weight: 600;
-}
+} */
 
 .menulinks {
   display: flex;
@@ -75,43 +84,36 @@
 }
 
 .search-icon {
-  margin-right: 30px;
+  margin-right: 8px;
   cursor: pointer;
 }
 
 .button {
   background-color: #ccc;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   margin-right: 20px;
   position: relative;
-  padding-right: 40px;
   color: #fff;
   transition: right 0.3s ease, opacity 0.3s ease;
-  width: 137px;
+  width: 144px;
+   /* "to left" / "to right" - affects initial color */
+   background: linear-gradient(to left, #ccc 50%, red 50%) right;
+   background-size: 200%;
+   transition: .5s ease-out;
 }
 
-.button:hover{
-  background-color: red;
-  transition: right 0.3s ease, opacity 0.3s ease;
-  width: 157px;
+.button:hover {
+  background-position: left;
 }
-
-.button::after {
-  content: "\2192";
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  font-size: 30px;
-  font-weight: 900;
-  opacity: 0;
-  transition: right 0.3s ease, opacity 0.3s ease;
+.button:hover .link-img{
+  display: inline-block;
 }
-
-.button:hover::after {
-  right: -10px;
-  opacity: 1;
+.link-img{
+  display: none;
+  width: 12px;
+  margin-top: 3ox;
+  margin-left: 3px;
 }
-

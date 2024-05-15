@@ -2,7 +2,7 @@ import React from "react";
 import "./csrreport.css";
 import one from "../Assets/Images/Group 24.png";
 import two from "../Assets/Images/Vector (1).png";
-import three from "../Assets/Images/Frame 1000003961.png";
+import three from "../Assets/Images/Vector.svg";
 
 const CsrReport = () => {
   return (
@@ -51,6 +51,9 @@ const CsrReport = () => {
           </div>
           <div className="four-two">
             <img src={three} alt="" />
+            <div className="esg-btn">
+                Explore ESG Hub
+            </div>
           </div>
         </div>
       </div>

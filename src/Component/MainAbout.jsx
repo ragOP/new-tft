@@ -12,14 +12,20 @@ const MainAbout = ({ className }) => {
       <div className="main-about-img">
         <img src={main} alt="" />
         <div className="main-overlay">
-          <div className="left-main-overlay">
-            <img src={left} alt="" />
-            <div className="play">
+        <div className="play">
               <div className="round">
                 <img src={play} alt="" />
               </div>
               <p className="play-btn">Watch this video</p>
             </div>
+          <div className="left-main-overlay">
+            <img src={left} alt="" />
+            {/* <div className="play">
+              <div className="round">
+                <img src={play} alt="" />
+              </div>
+              <p className="play-btn">Watch this video</p>
+            </div> */}
           </div>
           <div className="right-main-overlay">
             <img src={right} alt="" />

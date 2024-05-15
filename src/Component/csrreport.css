@@ -109,3 +109,65 @@
    text-align: left;
    color: #fff;
    }
+   .btn {
+    margin-top: 40px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+  }
+  
+  .btn::after {
+    content: '\2192';
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    transform: translate(0, -50%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    font-size: 30px;
+    transition: right 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .btn:hover::after {
+    right: -10px;
+    opacity: 1;
+  }
+  .four-two{
+    position: relative;
+    color: #fff;
+    font: 16px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+  .esg-btn{
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    /* text-align: center; */
+    font-size: 18px !important;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  .esg-btn::after {
+    content: '\2192';
+    position: absolute;
+    top: -4;
+    right: 5px;
+    color: #fff;
+    transform: translate(0, -50%);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    font-size: 35px;
+    transition: right 0.5s ease, opacity 0.5s ease;
+  }
+  .esg-btn:hover::after {
+    right: -10px; 
+    opacity: 1;
+  }
