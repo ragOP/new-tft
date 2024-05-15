@@ -120,7 +120,7 @@
  .right::after {
    content: '\2192';
    position: absolute;
-   top: -4;
+   top: -4px;
    right: 5px;
    transform: translate(0, -50%);
    width: 0;
