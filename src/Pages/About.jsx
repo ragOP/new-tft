@@ -9,8 +9,8 @@ import Dropdown from "../Component/Dropdown";
 import MainAbout from "../Component/MainAbout";
 
 const About = () => {
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState(null);
+  const [dropdownVisible, setDropdownVisible] = useState(true);
+  const [currentMenu, setCurrentMenu] = useState('About');
 
   const toggleDropdown = (menu) => {
     if (menu === currentMenu) {

@@ -12,8 +12,8 @@ import Eithics from "../Component/Eithics";
 import Governence from "../Component/Governence";
 
 const Csr = () => {
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState(null);
+  const [dropdownVisible, setDropdownVisible] = useState(true);
+  const [currentMenu, setCurrentMenu] = useState('CSR');
 
   const toggleDropdown = (menu) => {
     if (menu === currentMenu) {
