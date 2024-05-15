@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../Component/Footer";
 import Navbar from "../Component/Navbar";
-import MissionAbout from "../Component/MissionAbout";
-import Diversity from "../Component/Diversity";
-import Leadership from "../Component/Leadership";
-import Brands from "../Component/Brands";
+import Footer from "../Component/Footer";
 import Dropdown from "../Component/Dropdown";
-import MainAbout from "../Component/MainAbout";
+import NewsroomAbout from "../Component/internal/NewsroomAbout";
+import Podcast from "../Component/Podcast";
+import Media from "../Component/Media";
+import Newsletter from "../Component/Newsletter";
+import Press from "../Component/Press";
+import LeadershipN from "../Component/internal/LeadershipN";
+import InNews from "../Component/internal/InNews";
+import MainNewsroom from "../Component/internal/MainNewsroom";
 
-const About = () => {
+const Int = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [currentMenu, setCurrentMenu] = useState(null);
 
@@ -26,9 +29,9 @@ const About = () => {
     {
       title: "Our Company",
       content: [
-        { name: "Our Mission", link: "/internal" },
-        { name: "Our Values", link: "/internal" },
-        { name: "innovation", link: "/internal" },
+        { name: "Our Mission", link: "/about" },
+        { name: "Our Values", link: "/about" },
+        { name: "innovation", link: "/about" },
       ],
     },
     { title: "Our Stories" },
@@ -39,7 +42,7 @@ const About = () => {
   const CsrMenuData = [
     {
       title: "Corporate Governance",
-      content: [{ name: "Corporate Page 1", link: "/internal" }],
+      content: [{ name: "Corporate Page 1", link: "/csr" }],
     },
     {
       title: "Ethics & Compliance",
@@ -94,9 +97,6 @@ const About = () => {
       title: "Podcast : Science with a twist",
     },
   ];
-
-  const heroClass = dropdownVisible ? "blur" : "";
-
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -119,21 +119,19 @@ const About = () => {
           }
         />
       )}
-      <MainAbout className={heroClass} />
-      <MissionAbout />
-      <Diversity
-        title="Our Stories"
-        heading="My work is a story of"
-        hedingSpan="problem 
-        solving."
-        desc="Born almost three months premature, I grew up passionate about healthcare and cutting-edge technologies to create better health outcomes. My attraction to Thermo Fisher Scientific was simple: the chance to make a positive impact through problem solving."
-        sliderr={false}
-      />
-      <Leadership />
-      <Brands />
+      <NewsroomAbout />
+      <MainNewsroom />
+      <Podcast />
+      {/* <Press /> */}
+      <InNews />
+      <LeadershipN />
+      {/* <Media background={true} /> */}
+      <div className="cnter">
+        <Newsletter />
+      </div>
       <Footer />
     </>
   );
 };
 
-export default About;
+export default Int;

@@ -29,9 +29,9 @@ const Homepage = () => {
     {
       title: "Our Company",
       content: [
-        { name: "Our Mission", link: "/about" },
-        { name: "Our Values", link: "/about" },
-        { name: "innovation", link: "/about" },
+        { name: "Our Mission", link: "/internal" },
+        { name: "Our Values", link: "/internal" },
+        { name: "innovation", link: "/internal" },
       ],
     },
     { title: "Our Stories" },
@@ -42,7 +42,7 @@ const Homepage = () => {
   const CsrMenuData = [
     {
       title: "Corporate Governance",
-      content: [{ name: "Corporate Page 1", link: "/csr" }],
+      content: [{ name: "Corporate Page 1", link: "/internal" }],
     },
     {
       title: "Ethics & Compliance",

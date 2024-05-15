@@ -1,0 +1,50 @@
+.newsroom-about{
+    margin-top: 100px;
+    padding: 0 100px;
+    width: 100%;
+   }
+   .newsroom-about-title {
+    color: var(--Accent-Teal, #00677f);
+    font: 18px "Helvetica Neue LT W1G", Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+   }
+   .newsroom-about-main{
+    display: flex;
+    align-items: start;
+    gap: 100px;
+    padding-top: 30px;
+   }
+   .newsroom-about-left-heading{
+    font: 50px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+   }
+   .newsroom-about-left-heading > span {
+    font-weight: 700;
+   }
+   .newsroom-top{
+    font: 20px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+   }
+   .newsroom-right{
+    font: 20px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 50px;
+   }
+   .main-btn-newsroom{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+   }

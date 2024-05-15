@@ -6,7 +6,7 @@ import second from "../Assets/Images/Rectangle 19923.svg";
 import third from "../Assets/Images/Rectangle 19924.svg";
 import dot from "../Assets/Images/redsmall.svg";
 import right from "../Assets/Images/Group 107.png";
-import left from "../Assets/Images/Group 1071.png";
+import left from "../Assets/Images/abb.png";
 import main1 from "../Assets/Images/Frame 395.png";
 import girl from "../Assets/Images/girl.svg";
 import pic from "../Assets/Images/stock.png";
@@ -43,6 +43,7 @@ const Diversity = ({ background }) => {
   const [key, setKey] = useState(0);
   const [storyIndex, setStoryIndex] = useState(0);
   const [refresh, setRefresh] = useState(false);
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,30 +60,45 @@ const Diversity = ({ background }) => {
   }, [images]);
 
   useEffect(() => {
+    let index = 0;
+    const imagesArray = [main, main1, girl, pic, ];
+
     const interval = setInterval(() => {
-      let dynamic;
-      const randomNumber = Math.random();
-
-      if (randomNumber < 0.25) {
-        dynamic = main;
-      } else if (randomNumber < 0.5) {
-        dynamic = main1;
-      } else if (randomNumber < 0.75) {
-        dynamic = girl;
-      } else {
-        dynamic = pic;
-      }
-
-      setImages([dynamic, third, second, first]);
+        // Set images sequentially
+        setImages([imagesArray[index % imagesArray.length], third, second, first]);
+        console.log(`Image loaded: ${imagesArray[index % imagesArray.length]}`);
+        setStoryIndex(index % stories.length);
+        index++;
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+}, [  ]);
 
   const handleRefresh = () => {
     setRefresh((prevRefresh) => !prevRefresh);
     console.log("test");
   };
+
+  const lefts=()=>{
+    
+    setStoryIndex((prevIndex) => (prevIndex === 0 ? stories.length - 1 : prevIndex - 1));
+    setImages((prevImages) => {
+      const newImages = [...prevImages];
+      const lastImage = newImages.pop();
+      newImages.unshift(lastImage);
+      return newImages;
+  });
+  }
+  const rights=()=>{
+     setStoryIndex((prevIndex) => (prevIndex + 1) % stories.length);
+     setImages((prevImages) => {
+      const newImages = [...prevImages];
+      const firstImage = newImages.shift();
+      newImages.push(firstImage);
+      return newImages;
+  });
+  }
+  
 
   useEffect(() => {
     const storyInterval = setInterval(() => {
@@ -102,7 +118,7 @@ const Diversity = ({ background }) => {
           {images.map((image, index) => (
             <img
               className={index === 0 ? "slide-right-to-left" : ""}
-              key={key + index}
+              key={index }
               src={image}
               alt=""
             />
@@ -117,15 +133,18 @@ const Diversity = ({ background }) => {
           <div className="button-mission" style={{ width: "294px" }}>
             <img src={dot} alt="" />
             <p className="button-text" style={{ cursor: "pointer" }}>
-              Read full story
+              Read full story 
             </p>
           </div>
           <div className="slider-range">
-            <img onClick={handleRefresh} src={left} alt="" />
+            <img onClick={lefts} src={left} alt=""
+        
+            />
             <p>
               <span>{storyIndex + 1} </span>of 4
             </p>
-            <img onClick={handleRefresh} src={right} alt="" />
+            
+            <img onClick={rights} src={right} alt="" />
           </div>
         </div>
       </div>

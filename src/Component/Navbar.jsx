@@ -4,9 +4,11 @@ import logo from "../Assets/Images/logo.png";
 import logo1 from "../Assets/Images/logo1.png";
 import search from "../Assets/Images/Search.png";
 import { Link, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = ({ toggleDropdown, openDropDown }) => {
   const location = useLocation();
+  const navigate = useNavigate();
   const path = location.pathname;
   let usePath;
   if (path === "/") {
@@ -42,6 +44,8 @@ const Navbar = ({ toggleDropdown, openDropDown }) => {
               <Link
                 className={activeMenuItem === "About" ? "active" : ""}
                 onClick={() => handleMenuItemClick("About")}
+                to="/about"
+                
               >
                 ABOUT
               </Link>
@@ -50,6 +54,7 @@ const Navbar = ({ toggleDropdown, openDropDown }) => {
               <Link
                 className={activeMenuItem === "CSR" ? "active" : ""}
                 onClick={() => handleMenuItemClick("CSR")}
+                to="/csr"
               >
                 CORPORATE SOCIAL RESPONSIBILITY
               </Link>
