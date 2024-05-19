@@ -13,7 +13,8 @@ import MainNewsroom from "../Component/MainNewsroom";
 
 const Newsroom = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState(null);
+  const [currentMenu, setCurrentMenu] = useState('Newsroom');
+ 
 
   const toggleDropdown = (menu) => {
     if (menu === currentMenu) {

@@ -1,0 +1,21 @@
+.maindiv{
+    width: 100%;
+height: 260px;
+
+background: var(--Nuetral-Text, #222);
+}
+
+.text{
+    padding-top: 48px;
+    margin-left: 100px;
+    color: var(--Accent-Green, #B5BD00);
+    font: 18px "Helvetica Neue LT W1G", Helvetica;
+
+font-style: normal;
+font-weight: 700;
+line-height: 22px; /* 122.222% */
+letter-spacing: 1.8px;
+text-transform: uppercase;
+}
+
+

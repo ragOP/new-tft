@@ -1,0 +1,718 @@
+.kit-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust as needed */
+}
+
+.kit {
+  width: calc((100% - 40px) / 3); /* Adjust for gap */
+}
+
+.heading {
+  color: var(--Accent-Teal, #00677f);
+  font: 18px "Helvetica Neue LT W1G", Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-top: 48px;
+  padding-left: 100px;
+}
+
+.square {
+  display: flex;
+  height: 167px;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  border: 1px solid #c9cacc;
+}
+
+.head {
+  color:  #222222;
+  font: 20px "Helvetica Neue LT W1G", Helvetica;
+  font-style: bold;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+}
+
+.downloader {
+  color: #222222;
+  font: 14px "Helvetica Neue LT W1G", Helvetica;
+  font-style: bold;
+  font-weight: 500;
+  line-height: 22px; /* 140% */
+}
+
+.downloader p, .downloader span {
+  display: inline-block;
+  padding-top: 2px;
+  padding-left: 8px;
+  vertical-align: middle;
+}
+.parentdiv{
+    display: flex;
+    margin-top: 67px;
+}
+.alert {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    width: 100%;
+    padding: 24px 100px;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align items to the start */
+    background: #F5F5F5;
+  }
+  
+.subhead{
+    color:  #222222;
+    font: 24px "Helvetica Neue LT W1G", Helvetica;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 36px; /* 140% */
+}
+.update{
+    color:  #222222;
+    font: 16px "Helvetica Neue LT W1G", Helvetica;
+    font-style: bold;
+    font-weight: 400;
+    line-height: 24px; /* 140% */
+}
+
+.frame-1000004009,
+.frame-1000004009 * {
+  box-sizing: border-box;
+}
+.frame-1000004009 {
+  height: 1021px;
+  position: relative;
+}
+.investor-relations-kit {
+  color: var(--accent-teal, #00677f);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-75Bold", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  left: 100px;
+  top: 48px;
+}
+.frame-1000004012 {
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 167px;
+  position: absolute;
+  left: 100px;
+  top: 137px;
+}
+.frame-1000003890 {
+  border-style: solid;
+  border-color: #c9cacc;
+  border-width: 1px;
+  padding: 32px;
+  width: 167px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+  height: 167px;
+  position: relative;
+}
+.reconciliation-and-financial-package {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-65Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-1000004011 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.download-pdf {
+  color: var(--nuetral-text, #222222);
+  text-align: right;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.frame-1000004010 {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.frame-1000003891 {
+  border-style: solid;
+  border-color: #c9cacc;
+  border-width: 1px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+  height: 167px;
+  position: relative;
+}
+.interactive-proxy-statement {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-65Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-10000040102 {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.frame-1000003892 {
+  border-style: solid;
+  border-color: #c9cacc;
+  border-width: 1px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+  height: 167px;
+  position: relative;
+}
+.latest-10-k {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-65Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-10000040103 {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.frame-1000004013 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  position: absolute;
+  left: 100px;
+  top: 384px;
+}
+.investor-contacts {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-1000004017 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-1000004014 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.contact-information {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-65Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+}
+.rafael-tejada-vice-president-investor-relations-thermo-fisher-scientific-168-third-avenue-waltham-ma-usa-02451-phone-781-622-1111-e-mail-investorrelations-thermofisher-com {
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  width: 328px;
+}
+.rafael-tejada-vice-president-investor-relations-thermo-fisher-scientific-168-third-avenue-waltham-ma-usa-02451-phone-781-622-1111-e-mail-investorrelations-thermofisher-com-span {
+  color: var(--nuetral-text, #222222);
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.rafael-tejada-vice-president-investor-relations-thermo-fisher-scientific-168-third-avenue-waltham-ma-usa-02451-phone-781-622-1111-e-mail-investorrelations-thermofisher-com-span2 {
+  color: var(--primary-primary, #e71316);
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.rafael-tejada-vice-president-investor-relations-thermo-fisher-scientific-168-third-avenue-waltham-ma-usa-02451-phone-781-622-1111-e-mail-investorrelations-thermofisher-com-span3 {
+  color: var(--nuetral-text, #222222);
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.rafael-tejada-vice-president-investor-relations-thermo-fisher-scientific-168-third-avenue-waltham-ma-usa-02451-phone-781-622-1111-e-mail-investorrelations-thermofisher-com-span4 {
+  color: var(--primary-primary, #e71316);
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.rafael-tejada-vice-president-investor-relations-thermo-fisher-scientific-168-third-avenue-waltham-ma-usa-02451-phone-781-622-1111-e-mail-investorrelations-thermofisher-com-span5 {
+  color: var(--primary-primary, #e71316);
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.frame-1000004015 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.transfer-agent {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-65Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+}
+.american-stock-transfer-share-holder-inquiries-operations-center-620115th-avenue-brooklyn-ny-11219-phone-800-937-5449-corporate-website-http-www-amstock-com {
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  width: 328px;
+}
+.american-stock-transfer-share-holder-inquiries-operations-center-620115th-avenue-brooklyn-ny-11219-phone-800-937-5449-corporate-website-http-www-amstock-com-span {
+  color: var(--nuetral-text, #222222);
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.american-stock-transfer-share-holder-inquiries-operations-center-620115th-avenue-brooklyn-ny-11219-phone-800-937-5449-corporate-website-http-www-amstock-com-span2 {
+  color: var(--primary-primary, #e71316);
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.american-stock-transfer-share-holder-inquiries-operations-center-620115th-avenue-brooklyn-ny-11219-phone-800-937-5449-corporate-website-http-www-amstock-com-span3 {
+  color: var(--nuetral-text, #222222);
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.american-stock-transfer-share-holder-inquiries-operations-center-620115th-avenue-brooklyn-ny-11219-phone-800-937-5449-corporate-website-http-www-amstock-com-span4 {
+  color: var(--primary-primary, #e71316);
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.frame-1000004016 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.accounts {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-65Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+}
+.pricewater-house-coopers-llp-125-high-street-boston-ma-02110 {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  width: 328px;
+}
+.frame-1000003956 {
+  background: #f5f5f5;
+  padding: 24px 100px 24px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  left: calc(50% - 720px);
+  top: 736px;
+}
+.frame-1000003957 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 620px;
+  position: relative;
+}
+.frame-1000004019 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.investor-alerts {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  position: relative;
+}
+.get-updates-on-the-latest-investor-events-reports-news-and-more-from-our-ir-team {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  height: 56px;
+}
+.frame-1000003964 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-1000003962 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.checkbox {
+  border-radius: 2px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.all {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-1000003963 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.checkbox2 {
+  border-radius: 2px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.press-releases {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-10000039642 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.checkbox3 {
+  border-radius: 2px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.presentations {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-1000003965 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.checkbox4 {
+  border-radius: 2px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.sec-filings {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+}
+.rectangle-19961 {
+  background: #f5f5f5;
+  flex-shrink: 0;
+  width: 163px;
+  height: 25px;
+  position: relative;
+}
+.frame-1000004020 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.email-id {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-65Medium", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-10000039652 {
+  flex-shrink: 0;
+  width: 332px;
+  height: 48px;
+  position: relative;
+}
+.frame-1000004021 {
+  background: #ffffff;
+  border-radius: 2px;
+  padding: 13px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 410px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.primary-investor-vc-com {
+  color: var(--nuetral-text, #222222);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-55Roman", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-1000003961 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 78px;
+  position: relative;
+}
+.rectangle-19960 {
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 38px;
+  height: auto;
+  position: relative;
+  overflow: visible;
+}
+.frame-1000003960 {
+  margin: 0 0 0 -1px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 281px;
+  position: relative;
+}
+.frame-1000003959 {
+  background: #e71316;
+  padding: 14px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 281px;
+  position: relative;
+}
+.b-1 {
+  padding: 10px 8px 10px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.read-more {
+  color: var(--primary-white, #ffffff);
+  text-align: left;
+  font-family: "HelveticaNeueLtW1G-65Medium", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  position: relative;
+}
+.vector {
+  margin: 0 0 0 -1px;
+  flex-shrink: 0;
+  width: 13.6px;
+  height: 12px;
+  position: relative;
+  overflow: visible;
+}

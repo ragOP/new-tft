@@ -41,6 +41,17 @@
  text-align: left;
  margin-top: 50px;
 }
+.newsroom-right-investor{
+    font:12px "Helvetica Neue LT W1G", Helvetica;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 2px;
+    color: #54585A;
+    line-height: 20px;
+    opacity: 0.8;
+   }
 .main-btn-newsroom{
  display: flex;
  align-items: center;

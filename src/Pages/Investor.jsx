@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Component/Navbar";
 import Dropdown from "../Component/Dropdown";
-
+import MainNewsroomInvestor from "../Component/MainNewsroomInvestor";
+import NewsroomAboutInvestor from "../Component/NewsroomAboutInvestor";
+import RevenueInvestor from '../Component/RevenueInvestor';
+import Footer from "../Component/Footer";
+import NewsSection from '../Component/NewsSection'
+import Kit from '../Component/Kit'
 const Investor = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [currentMenu, setCurrentMenu] = useState(null);
@@ -110,7 +115,12 @@ const Investor = () => {
           }
         />
       )}
-      <h1>Investor</h1>
+         <NewsroomAboutInvestor />
+      <MainNewsroomInvestor />
+      <RevenueInvestor/>
+      <NewsSection/>
+      <Kit/>
+      <Footer/>
     </>
   );
 };

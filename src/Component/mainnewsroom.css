@@ -32,6 +32,15 @@
  text-align: left;
  margin-top: 20px;
 }
+.txt-mid-investor{
+    color:#fff;
+    font: 24px "Helvetica Neue LT W1G", Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: left;
+    margin-top: 20px;
+   }
 .txt-mid > span {
  font-weight: 700;
 }
